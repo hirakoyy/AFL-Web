@@ -4,8 +4,299 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AFL Web | Kelompok 1 Kelas 10A A3</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
+    />
   </head>
   <body>
-    <h1></h1>
+    <!-- <style>
+      * {
+        border: solid 1px;
+      }
+    </style> -->
+    <header
+      class="sticky top-0 z-10 w-screen flex box-border justify-between px-6 py-5 bg-green-700 text-white"
+    >
+      <div class="flex gap-2 items-center">
+        <img class="w-12.5" src="./asset/afl-logo.png" alt="AFL Logo" />
+        <h1
+          class="font-roboto-flex font-black [font-variation-settings:'GRAD'_-200,'YTUC'_600,'wdth'_151] text-4xl"
+        >
+          AFL
+        </h1>
+      </div>
+      <nav class="flex p-4">
+        <i class="ph-bold ph-list"></i>
+      </nav>
+    </header>
+    <main class="bg-[#FDFAEE]">
+      <section id="hero" class="flex flex-col font-barlow px-5 py-7.5">
+        <div
+          class="flex w-full font-extrabold bg-gray-500 h-60 p-5 items-end rounded-xl"
+        >
+          <h2 class="text-white text-2xl uppercase leading-6">
+            Ketegangan memuncak di papan atas. Setiap laga kini menjadi penentu
+            menuju gelar juara AFL
+          </h2>
+        </div>
+      </section>
+      <section id="result" class="flex flex-col font-barlow px-5 mb-7.5">
+        <div class="py-2.5">
+          <h2
+            class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+          >
+            Latest Results
+          </h2>
+        </div>
+        <div
+          class="flex flex-col w-full font-space-grotesk bg-[#EAF8F1] text-[#2C5743] border border-[#7BBA9C] py-5 rounded-xl"
+        >
+          <time class="text-center font-bold text-xl mb-5">Sat, Sep 11</time>
+          <hr class="text-[#7BBA9C]" />
+          <div class="flex flex-col">
+            <div class="match flex justify-between py-3 px-5 gap-2.5">
+              <div class="flex flex-col w-full gap-2">
+                <div class="flex items-center gap-2 text-base w-full">
+                  <div class="w-7.5">
+                    <img src="./asset/sparta-fc-logo-small.png" alt="" />
+                  </div>
+                  <h4 class="w-full font-medium">Sparta FC</h4>
+                </div>
+                <div class="flex items-center gap-2 text-base w-full">
+                  <div class="w-7.5">
+                    <img src="./asset/vartica-fc-logo-small.png.png" alt="" />
+                  </div>
+                  <h4 class="w-full font-medium">Vartica FC</h4>
+                </div>
+              </div>
+              <div
+                class="flex flex-col px-3 justify-evenly text-white font-bold bg-[#61997E] rounded"
+              >
+                <p>1</p>
+                <hr />
+                <p>2</p>
+              </div>
+              <div class="flex border-l-2 border-[#7BBA9C] p-1 font-bold">
+                <p class="self-center pl-2.5">FT</p>
+              </div>
+            </div>
+            <hr class="text-[#7BBA9C]" />
+            <div class="match flex justify-between py-3 px-5 gap-2.5">
+              <div class="flex flex-col w-full gap-2">
+                <div class="flex items-center gap-2 text-base w-full">
+                  <div class="w-7.5">
+                    <img src="./asset/sparta-fc-logo-small.png" alt="" />
+                  </div>
+                  <h4 class="w-full font-medium">Sparta FC</h4>
+                </div>
+                <div class="flex items-center gap-2 text-base w-full">
+                  <div class="w-7.5">
+                    <img src="./asset/vartica-fc-logo-small.png.png" alt="" />
+                  </div>
+                  <h4 class="w-full font-medium">Vartica FC</h4>
+                </div>
+              </div>
+              <div
+                class="flex flex-col px-3 justify-evenly text-white font-bold bg-[#61997E] rounded"
+              >
+                <p>1</p>
+                <hr />
+                <p>2</p>
+              </div>
+              <div class="flex border-l-2 border-[#7BBA9C] p-1 font-bold">
+                <p class="self-center pl-2.5">FT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="upcoming">
+        <h2>Upcoming Matches</h2>
+        <div class="table">
+          <div class="match">
+            <div class="">
+              <div class="">
+                <div class=""><img src="" alt="" /></div>
+                <h4>Sparta FC</h4>
+              </div>
+              <div class="">
+                <div class=""><img src="" alt="" /></div>
+                <h4>Abrar United</h4>
+              </div>
+            </div>
+            <div class="">
+              <p>1</p>
+              <hr />
+              <p>2</p>
+            </div>
+            <div class="">
+              <hr />
+              <time>Sep 20 21:10</time>
+            </div>
+          </div>
+          <hr />
+          <div class="match">
+            <div class="">
+              <div class="">
+                <div class=""><img src="" alt="" /></div>
+                <h4>Sparta FC</h4>
+              </div>
+              <div class="">
+                <div class=""><img src="" alt="" /></div>
+                <h4>Abrar United</h4>
+              </div>
+            </div>
+            <div class="">
+              <p>1</p>
+              <hr />
+              <p>2</p>
+            </div>
+            <div class="">
+              <hr />
+              <time>Sep 20 21:10</time>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="standings">
+        <h2>Standings</h2>
+        <div class="table">
+          <table>
+            <tr>
+              <th>No.</th>
+              <th>Team</th>
+              <th>Pl</th>
+              <th>W</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class=""><img src="" alt="img" /></div>
+                <p>Sparta FC</p>
+              </td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div class=""><img src="" alt="img" /></div>
+                <p>Sparta FC</p>
+              </td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <div class=""><img src="" alt="img" /></div>
+                <p>Sparta FC</p>
+              </td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <div class=""><img src="" alt="img" /></div>
+                <p>Sparta FC</p>
+              </td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <div class=""><img src="" alt="img" /></div>
+                <p>Sparta FC</p>
+              </td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+          </table>
+          <div class="gradient">
+            <div class="">
+              <p>View More</p>
+              <div class="arrow">></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="clubs">
+        <h2>Clubs</h2>
+        <div class="wrapper">
+          <div class="card">
+            <div class="">
+              <h3>Nusantara Eintracht</h3>
+              <div class="arrow">></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="">
+              <h3>Abrar United</h3>
+              <div class="arrow">></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="">
+              <h3>Delphina Union</h3>
+              <div class="arrow">></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <h2>Latest News</h2>
+        <div class="news-wrapper">
+          <div class="news">
+            <div class="text">
+              <h3>Gelandang Serang yang mempesona!</h3>
+              <p>Vartica FC</p>
+            </div>
+            <img src="" alt="news image" />
+          </div>
+          <div class="news">
+            <div class="text">
+              <h3>Gelandang Serang yang mempesona!</h3>
+              <p>Vartica FC</p>
+            </div>
+            <img src="" alt="news image" />
+          </div>
+          <div class="news">
+            <div class="text">
+              <h3>Gelandang Serang yang mempesona!</h3>
+              <p>Vartica FC</p>
+            </div>
+            <img src="" alt="news image" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="">
+        <img src="" alt="logo" />
+        <p>Abu Dzar Futsal League</p>
+        <p>26-27</p>
+      </div>
+      <div class="">
+        <h2>Menu</h2>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Teams</a></li>
+            <li><a href="">Matches</a></li>
+            <li><a href="">Standings</a></li>
+            <li><a href="">News</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+      <div class=""><span id="big-text"></span></div>
+      <hr />
+      <div class="">&copy; AFL 2026 | All Rights Reserved</div>
+    </footer>
   </body>
 </html>
