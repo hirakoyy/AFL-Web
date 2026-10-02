@@ -17,7 +17,7 @@
       }
     </style> -->
     <header
-      class="sticky top-0 z-10 w-screen flex box-border justify-between px-6 py-5 bg-green-700 text-white"
+      class="sticky top-0 z-10 w-screen flex box-border justify-between px-6 py-5 bg-[#2C5743] text-white items-center"
     >
       <div class="flex gap-2 items-center">
         <img class="w-12.5" src="./asset/afl-logo.png" alt="AFL Logo" />
@@ -27,29 +27,114 @@
           AFL
         </h1>
       </div>
-      <nav class="flex p-4">
-        <i class="ph-bold ph-list"></i>
+      <nav class="flex justify-center">
+        <i class="ph-bold ph-list text-2xl"></i>
       </nav>
     </header>
     <main class="bg-[#FDFAEE]">
       <section id="hero" class="flex flex-col font-barlow px-5 py-7.5">
         <div
-          class="flex w-full font-extrabold bg-gray-500 h-60 p-5 items-end rounded-xl"
+          class="flex flex-col w-full font-extrabold bg-gray-500 h-60 p-5 justify-end rounded-xl"
         >
-          <h2 class="text-white text-2xl uppercase leading-6">
+          <p class="font-normal tracking-wider text-white">FEATURED</p>
+          <h2 class="text-white text-xl uppercase leading-6">
             Ketegangan memuncak di papan atas. Setiap laga kini menjadi penentu
             menuju gelar juara AFL
           </h2>
         </div>
       </section>
-      <section id="result" class="flex flex-col font-barlow px-5 mb-7.5">
-        <div class="py-2.5">
-          <h2
-            class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+      <section id="clubs" class="flex flex-col font-barlow mb-7.5 gap-2.5">
+        <h2
+          class="pl-5 font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+        >
+          Clubs
+        </h2>
+
+        <div class="pl-5 flex w-full overflow-x-scroll gap-4">
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Eintracht.png)"
           >
-            Latest Results
-          </h2>
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Nusantara Eintracht</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Abrar.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Abrar United</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Esperanza\ Card.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Deportivo de Esperanza</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Emporio.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Emporio de Montza</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Delphina.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Delphina Union</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Vartica.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Vartica FC</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/AlBarq.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Al Barq</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
+          <div
+            class="flex w-62.5 h-50 shrink-0 rounded-2xl items-end p-5 font-space-grotesk text-white"
+            style="background-image: url(./asset/Sparta.png)"
+          >
+            <div class="flex w-full justify-between items-end">
+              <h3 class="font-bold text-2xl">Sparta FC</h3>
+              <i class="ph-bold ph-arrow-up-right text-2xl"></i>
+            </div>
+          </div>
         </div>
+      </section>
+      <section
+        id="result"
+        class="flex flex-col font-barlow px-5 mb-7.5 gap-2.5"
+      >
+        <h2
+          class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+        >
+          Latest Results
+        </h2>
+
         <div
           class="flex flex-col w-full font-space-grotesk p-2 bg-[#EAF8F1] text-[#2C5743] border border-[#7BBA9C] rounded-xl"
         >
@@ -112,14 +197,16 @@
           </div>
         </div>
       </section>
-      <section id="upcoming" class="flex flex-col font-barlow px-5 mb-7.5">
-        <div class="py-2.5">
-          <h2
-            class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
-          >
-            Upcoming Matches
-          </h2>
-        </div>
+      <section
+        id="upcoming"
+        class="flex flex-col font-barlow px-5 mb-7.5 gap-2.5"
+      >
+        <h2
+          class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+        >
+          Upcoming Matches
+        </h2>
+
         <div
           class="flex flex-col w-full font-space-grotesk p-2 bg-[#EAF8F1] text-[#2C5743] border border-[#7BBA9C] rounded-xl"
         >
@@ -173,110 +260,139 @@
         </div>
       </section>
 
-      <section id="standings" class="flex flex-col font-barlow px-5 mb-7.5">
+      <section
+        id="standings"
+        class="flex flex-col font-barlow px-5 mb-7.5 gap-2.5"
+      >
         <h2
           class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
         >
           STANDINGS
         </h2>
+
         <div
           class="relative flex flex-col w-full font-space-grotesk bg-[#EAF8F1] text-[#2C5743] border border-[#7BBA9C] rounded-xl text-start"
         >
-          <table class="mx-5 my-4">
+          <table class="border-separate px-5 border-spacing-y-5">
             <tr>
               <th class="text-start">No.</th>
               <th class="text-start">Team</th>
-              <th class="text-start">Pl</th>
-              <th class="text-start">W</th>
-              <th class="text-start">Pts</th>
+              <th class="text-center">Pl</th>
+              <th class="text-center">W</th>
+              <th class="text-center">Pts</th>
             </tr>
             <tr>
-              <td>1</td>
+              <td class="font-bold">1</td>
               <td>
-                <div class=""><img src="" alt="img" /></div>
-                <p>Sparta FC</p>
+                <div class="flex gap-2.5 items-center">
+                  <div>
+                    <img
+                      class="w-10 h-10"
+                      src="./asset/abrar-united-logo.png"
+                      alt="img"
+                    />
+                  </div>
+                  <p class="font-medium">Abrar United</p>
+                </div>
               </td>
-              <td>2</td>
-              <td>1</td>
-              <td>4</td>
+              <td class="text-center">2</td>
+              <td class="text-center">1</td>
+              <td class="text-center">4</td>
             </tr>
             <tr>
-              <td>2</td>
+              <td class="font-bold">2</td>
               <td>
-                <div class=""><img src="" alt="img" /></div>
-                <p>Sparta FC</p>
+                <div class="flex gap-2.5 items-center">
+                  <div>
+                    <img
+                      class="w-10 h-10"
+                      src="./asset/abrar-united-logo.png"
+                      alt="img"
+                    />
+                  </div>
+                  <p class="font-medium">Abrar United</p>
+                </div>
               </td>
-              <td>2</td>
-              <td>1</td>
-              <td>4</td>
+              <td class="text-center">2</td>
+              <td class="text-center">1</td>
+              <td class="text-center">4</td>
             </tr>
             <tr>
-              <td>3</td>
+              <td class="font-bold">3</td>
               <td>
-                <div class=""><img src="" alt="img" /></div>
-                <p>Sparta FC</p>
+                <div class="flex gap-2.5 items-center">
+                  <div>
+                    <img
+                      class="w-10 h-10"
+                      src="./asset/abrar-united-logo.png"
+                      alt="img"
+                    />
+                  </div>
+                  <p class="font-medium">Abrar United</p>
+                </div>
               </td>
-              <td>2</td>
-              <td>1</td>
-              <td>3</td>
+              <td class="text-center">2</td>
+              <td class="text-center">1</td>
+              <td class="text-center">3</td>
             </tr>
             <tr>
-              <td>4</td>
+              <td class="font-bold">4</td>
               <td>
-                <div class=""><img src="" alt="img" /></div>
-                <p>Sparta FC</p>
+                <div class="flex gap-2.5 items-center">
+                  <div>
+                    <img
+                      class="w-10 h-10"
+                      src="./asset/abrar-united-logo.png"
+                      alt="img"
+                    />
+                  </div>
+                  <p class="font-medium">Abrar United</p>
+                </div>
               </td>
-              <td>2</td>
-              <td>1</td>
-              <td>2</td>
+              <td class="text-center">2</td>
+              <td class="text-center">1</td>
+              <td class="text-center">2</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td class="font-bold">5</td>
               <td>
-                <div class=""><img src="" alt="img" /></div>
-                <p>Sparta FC</p>
+                <div class="flex gap-2.5 items-center">
+                  <div>
+                    <img
+                      class="w-10 h-10"
+                      src="./asset/abrar-united-logo.png"
+                      alt="img"
+                    />
+                  </div>
+                  <p class="font-medium">Abrar United</p>
+                </div>
               </td>
-              <td>2</td>
-              <td>1</td>
-              <td>2</td>
+              <td class="text-center">2</td>
+              <td class="text-center">1</td>
+              <td class="text-center">2</td>
             </tr>
           </table>
           <div
-            class="flex top-0 left-0 absolute w-full h-full bg-linear-to-b from-0% via-[#709484]] via 71% to-[#467861] rounded-xl items-end"
+            class="absolute flex w-full h-full rounded-xl justify-center items-end p-4 bg-[linear-gradient(0deg,rgb(44_87_67)_0%,transparent_46%)]"
           >
-            <div class="flex w-full text-center justify-center text-white">
-              <p>View More</p>
-              <div class="arrow"><i class="ph-bold ph-caret-right"></i></div>
-            </div>
+            <button class="flex items-center text-white gap-2 px-3 py-2.5">
+              <p class="font-bold text-2xl">View More</p>
+              <i class="ph-bold ph-arrow-right text-2xl"></i>
+            </button>
           </div>
         </div>
       </section>
-      <section id="clubs">
-        <h2>Clubs</h2>
-        <div class="wrapper">
-          <div class="card">
-            <div class="">
-              <h3>Nusantara Eintracht</h3>
-              <div class="arrow">></div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="">
-              <h3>Abrar United</h3>
-              <div class="arrow">></div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="">
-              <h3>Delphina Union</h3>
-              <div class="arrow">></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="news">
-        <h2>Latest News</h2>
-        <div class="news-wrapper">
+
+      <section id="news" class="flex flex-col font-barlow px-5 mb-7.5 gap-2.5">
+        <h2
+          class="font-barlow font-black leading-8 uppercase text-3xl text-[#2C5743]"
+        >
+          Latest news
+        </h2>
+
+        <div
+          class="relative flex flex-col w-full font-space-grotesk bg-[#EAF8F1] text-[#2C5743] border border-[#7BBA9C] rounded-xl text-start"
+        >
           <div class="news">
             <div class="text">
               <h3>Gelandang Serang yang mempesona!</h3>
