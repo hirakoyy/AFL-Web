@@ -9,13 +9,8 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
-    --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-base: 1rem;
@@ -37,7 +32,6 @@
     --tracking-wider: 0.05em;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-barlow: "Barlow", sans-serif;
@@ -224,9 +218,6 @@
   .flex {
     display: flex;
   }
-  .inline {
-    display: inline;
-  }
   .table {
     display: table;
   }
@@ -262,15 +253,6 @@
   }
   .w-62\.5 {
     width: calc(var(--spacing) * 62.5);
-  }
-  .w-93 {
-    width: calc(var(--spacing) * 93);
-  }
-  .w-93\.75 {
-    width: calc(var(--spacing) * 93.75);
-  }
-  .w-\[375px\] {
-    width: 375px;
   }
   .w-full {
     width: 100%;
@@ -330,12 +312,6 @@
   .self-center {
     align-self: center;
   }
-  .overflow-clip {
-    overflow: clip;
-  }
-  .overflow-scroll {
-    overflow: scroll;
-  }
   .overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -362,6 +338,21 @@
   .bg-\[\#2C5743\] {
     background-color: #2C5743;
   }
+  .bg-\[\#2c57\] {
+    background-color: #2c57;
+  }
+  .bg-\[\#2c5743\] {
+    background-color: #2c5743;
+  }
+  .bg-\[\#2c5743b7\] {
+    background-color: #2c5743b7;
+  }
+  .bg-\[\#2c5743da\] {
+    background-color: #2c5743da;
+  }
+  .bg-\[\#2c\] {
+    background-color: #2c;
+  }
   .bg-\[\#61997E\] {
     background-color: #61997E;
   }
@@ -371,29 +362,65 @@
   .bg-\[\#FDFAEE\] {
     background-color: #FDFAEE;
   }
-  .bg-\[2C5743\] {
-    background-color: 2C5743;
-  }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
-  }
-  .bg-green-700 {
-    background-color: var(--color-green-700);
-  }
-  .bg-transparent {
-    background-color: transparent;
   }
   .bg-\[linear-gradient\(0deg\,rgb\(44_87_67\)_0\%\,transparent_46\%\)\] {
     background-image: linear-gradient(0deg,rgb(44 87 67) 0%,transparent 46%);
   }
-  .bg-\[url\(\'\.\/asset\/Eintracht\.png\'\)\] {
-    background-image: url('./asset/Eintracht.png');
+  .bg-\[url\(\.\/asset\/Eintracht\.png\)\] {
+    background-image: url(./asset/Eintracht.png);
   }
-  .bg-center {
-    background-position: center;
+  .bg-\[url\(\/asset\/Abrar\.png\)\] {
+    background-image: url(/asset/Abrar.png);
+  }
+  .bg-\[url\(\/asset\/AlBarq\.png\)\] {
+    background-image: url(/asset/AlBarq.png);
+  }
+  .bg-\[url\(\/asset\/Delphina\.png\)\] {
+    background-image: url(/asset/Delphina.png);
+  }
+  .bg-\[url\(\/asset\/Deportivo\.png\)\] {
+    background-image: url(/asset/Deportivo.png);
+  }
+  .bg-\[url\(\/asset\/Eintracht\.jpg\)\] {
+    background-image: url(/asset/Eintracht.jpg);
+  }
+  .bg-\[url\(\/asset\/Eintracht\.png\)\] {
+    background-image: url(/asset/Eintracht.png);
+  }
+  .bg-\[url\(\/asset\/Emporio\.png\)\] {
+    background-image: url(/asset/Emporio.png);
+  }
+  .bg-\[url\(\/asset\/Esperanza\.png\)\] {
+    background-image: url(/asset/Esperanza.png);
+  }
+  .bg-\[url\(\/asset\/Mont\.png\)\] {
+    background-image: url(/asset/Mont.png);
+  }
+  .bg-\[url\(\/asset\/Montza\.png\)\] {
+    background-image: url(/asset/Montza.png);
+  }
+  .bg-\[url\(\/asset\/Sparta\.png\)\] {
+    background-image: url(/asset/Sparta.png);
+  }
+  .bg-\[url\(\/asset\/Vartica\.png\)\] {
+    background-image: url(/asset/Vartica.png);
+  }
+  .bg-\[url\(\/asset\/mountains\.jpg\)\] {
+    background-image: url(/asset/mountains.jpg);
+  }
+  .bg-\[url\(\/img\/mountains\.jpg\)\] {
+    background-image: url(/img/mountains.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
   }
   .p-1 {
     padding: var(--spacing);
+  }
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -416,9 +443,6 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -427,6 +451,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -442,9 +469,6 @@
   }
   .pl-2\.5 {
     padding-left: calc(var(--spacing) * 2.5);
-  }
-  .pl-4 {
-    padding-left: calc(var(--spacing) * 4);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -515,6 +539,10 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
@@ -533,6 +561,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-5 {
+    opacity: 5%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
