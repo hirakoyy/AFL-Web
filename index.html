@@ -20,7 +20,7 @@
     <header
       class="sticky top-0 z-50 flex w-full items-center justify-between bg-[#2C5743] px-5 py-4 text-white md:px-10 md:py-4"
     >
-      <a href="#hero" class="flex items-center gap-2">
+      <a href="./index.html" class="flex items-center gap-2">
         <img src="./asset/afl-logo.png" alt="AFL Logo" class="w-12.5 md:w-14" />
 
         <h1
@@ -31,6 +31,7 @@
       </a>
 
       <!-- Mobile menu button -->
+
       <button
         id="menu-button"
         type="button"
@@ -42,8 +43,12 @@
       </button>
 
       <!-- Desktop navigation -->
+
       <nav class="hidden items-center gap-8 md:flex">
-        <a href="#hero" class="font-medium transition-opacity hover:opacity-70">
+        <a
+          href="./index.html"
+          class="font-medium transition-opacity hover:opacity-70"
+        >
           Home
         </a>
 
@@ -55,6 +60,7 @@
         </a>
 
         <!-- Teams dropdown -->
+
         <div class="group relative">
           <button type="button" class="flex items-center gap-1 font-medium">
             Teams
@@ -122,7 +128,10 @@
           Standings
         </a>
 
-        <a href="#news" class="font-medium transition-opacity hover:opacity-70">
+        <a
+          href="./news.html"
+          class="font-medium transition-opacity hover:opacity-70"
+        >
           News
         </a>
       </nav>
@@ -138,9 +147,9 @@
         class="absolute right-0 top-0 flex h-full w-[80%] max-w-sm flex-col bg-[#2C5743] px-7 pb-10 pt-28 text-white shadow-xl"
       >
         <div class="flex flex-col gap-5 text-xl">
-          <a href="#hero" class="mobile-link"> Home </a>
+          <a href="./index.html" class="mobile-link">Home</a>
 
-          <a href="#about" class="mobile-link"> About </a>
+          <a href="./about.html" class="mobile-link">About</a>
 
           <details>
             <summary
@@ -160,11 +169,11 @@
             </div>
           </details>
 
-          <a href="#upcoming" class="mobile-link"> Matches </a>
+          <a href="#upcoming" class="mobile-link">Matches</a>
 
-          <a href="#standings" class="mobile-link"> Standings </a>
+          <a href="#standings" class="mobile-link">Standings</a>
 
-          <a href="#news" class="mobile-link"> News </a>
+          <a href="./news.html" class="mobile-link">News</a>
         </div>
       </nav>
     </div>
@@ -176,18 +185,27 @@
 
       <section id="hero" class="flex flex-col px-5 py-7.5 md:px-10 md:py-10">
         <article
-          class="flex h-60 w-full flex-col justify-end rounded-xl bg-gray-500 p-5 font-extrabold md:h-100 md:p-8"
+          class="relative flex h-60 w-full flex-col justify-end overflow-hidden rounded-lg bg-cover bg-center p-5 font-extrabold md:h-100 md:p-8"
+          style="background-image: url(&quot;./asset/about-2.png&quot;)"
         >
-          <p class="font-normal tracking-wider text-white md:text-lg">
-            FEATURED
-          </p>
+          <!-- 👆 PUT YOUR FEATURED IMAGE URL/PATH HERE -->
 
-          <h2
-            class="max-w-4xl text-2xl uppercase leading-6 text-white md:text-5xl md:leading-[1.05] line-clamp-2"
-          >
-            Ketegangan memuncak di papan atas. Setiap laga kini menjadi penentu
-            menuju gelar juara AFL.
-          </h2>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-[#2C5743] via-[#2C5743]/30 to-transparent"
+          ></div>
+
+          <div class="relative z-10">
+            <p class="font-normal tracking-wider text-white md:text-lg">
+              FEATURED
+            </p>
+
+            <h2
+              class="max-w-4xl text-2xl uppercase leading-6 text-white md:text-5xl md:leading-[1.05] line-clamp-2"
+            >
+              Ketegangan memuncak di papan atas. Setiap laga kini menjadi
+              penentu menuju gelar juara AFL.
+            </h2>
+          </div>
         </article>
       </section>
 
@@ -202,13 +220,10 @@
 
         <div class="flex w-full gap-4 overflow-x-auto px-5 pb-1 md:px-10">
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Esperanza.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
-
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Deportivo de Esperanza</h3>
 
@@ -217,12 +232,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Emporio.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Emporio de Montza</h3>
@@ -232,12 +246,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Delphina.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Delphina Union</h3>
@@ -247,13 +260,10 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Eintracht.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
-
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Nusantara Eintracht</h3>
 
@@ -262,12 +272,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Abrar.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Abrar United</h3>
@@ -277,12 +286,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Vartica.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Vartica FC</h3>
@@ -292,12 +300,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/AlBarq.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Al Barq</h3>
@@ -307,12 +314,11 @@
           </article>
 
           <!-- Club -->
+
           <article
             class="relative flex h-50 w-62.5 shrink-0 items-end overflow-hidden rounded-2xl bg-[url(/asset/Sparta.png)] bg-cover bg-center px-5 py-4 font-space-grotesk text-white md:h-60 md:w-75"
           >
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
-            ></div>
+            <div></div>
 
             <div class="relative flex w-full items-end justify-between gap-3">
               <h3 class="text-2xl font-semibold">Sparta FC</h3>
@@ -325,8 +331,6 @@
 
       <!-- ==================== LATEST RESULTS ==================== -->
 
-      <!-- Latest Results -->
-      <!-- Latest Results -->
       <section
         id="results"
         class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
@@ -341,6 +345,7 @@
           class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743]"
         >
           <!-- Date -->
+
           <div
             class="border-b border-[#7BBA9C] px-4 py-5 text-center md:px-6 md:py-5"
           >
@@ -348,22 +353,24 @@
           </div>
 
           <!-- Match 1 -->
+
           <article
             class="grid grid-cols-[1fr_auto_auto] items-center gap-3 border-b border-[#7BBA9C] px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
           >
             <!-- Mobile teams / Desktop team 1 -->
+
             <div
               class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
             >
               <div
-                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+                class="flex flex-row-reverse items-center justify-end gap-2 text-base md:flex-row md:text-lg"
               >
                 <span class="font-medium md:order-1"> Sparta FC </span>
 
                 <img
                   src="./asset/sparta-fc-logo.png"
                   alt="Sparta FC"
-                  class="w-7.5 md:w-9 md:order-2"
+                  class="w-7.5 md:order-2 md:w-9"
                 />
               </div>
 
@@ -379,6 +386,7 @@
             </div>
 
             <!-- Score -->
+
             <div
               class="row-span-2 flex flex-col items-center justify-center rounded-md bg-[#5F9D7F] px-2.5 py-1.5 font-barlow font-bold leading-none text-white md:row-span-1 md:col-start-3 md:flex-row md:gap-2 md:bg-transparent md:px-3 md:py-0 md:text-[#2C5743]"
             >
@@ -387,6 +395,7 @@
             </div>
 
             <!-- Desktop team 2 -->
+
             <div
               class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
             >
@@ -400,6 +409,7 @@
             </div>
 
             <!-- FT -->
+
             <div
               class="row-span-2 border-l-2 border-[#7BBA9C] pl-3 text-base font-bold md:row-span-1 md:col-start-5 md:pl-5 md:text-base"
             >
@@ -408,22 +418,24 @@
           </article>
 
           <!-- Match 2 -->
+
           <article
             class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
           >
             <!-- Mobile teams / Desktop team 1 -->
+
             <div
               class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
             >
               <div
-                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+                class="flex flex-row-reverse items-center justify-end gap-2 text-base md:flex-row md:text-lg"
               >
                 <span class="font-medium md:order-1"> Abrar United </span>
 
                 <img
                   src="./asset/abrar-united-logo.png"
                   alt="Abrar United"
-                  class="w-7.5 md:w-9 md:order-2"
+                  class="w-7.5 md:order-2 md:w-9"
                 />
               </div>
 
@@ -439,6 +451,7 @@
             </div>
 
             <!-- Score -->
+
             <div
               class="row-span-2 flex flex-col items-center justify-center rounded-md bg-[#5F9D7F] px-2.5 py-1.5 font-barlow font-bold leading-none text-white md:row-span-1 md:col-start-3 md:flex-row md:gap-2 md:bg-transparent md:px-3 md:py-0 md:text-[#2C5743]"
             >
@@ -447,6 +460,7 @@
             </div>
 
             <!-- Desktop team 2 -->
+
             <div
               class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
             >
@@ -460,6 +474,7 @@
             </div>
 
             <!-- FT -->
+
             <div
               class="row-span-2 border-l-2 border-[#7BBA9C] pl-3 text-base font-bold md:row-span-1 md:col-start-5 md:pl-5 md:text-base"
             >
@@ -468,8 +483,11 @@
           </article>
         </div>
       </section>
+
+      <!-- ==================== UPCOMING MATCHES ==================== -->
+
       <section
-        id="results"
+        id="upcoming"
         class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
       >
         <h2
@@ -481,25 +499,25 @@
         <div
           class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743]"
         >
-          <!-- Date -->
-
           <!-- Match 1 -->
+
           <article
             class="grid grid-cols-[1fr_auto_auto] items-center gap-3 border-b border-[#7BBA9C] px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
           >
             <!-- Mobile teams / Desktop team 1 -->
+
             <div
               class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
             >
               <div
-                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+                class="flex flex-row-reverse items-center justify-end gap-2 text-base md:flex-row md:text-lg"
               >
                 <span class="font-medium md:order-1"> Sparta FC </span>
 
                 <img
                   src="./asset/sparta-fc-logo.png"
                   alt="Sparta FC"
-                  class="w-7.5 md:w-9 md:order-2"
+                  class="w-7.5 md:order-2 md:w-9"
                 />
               </div>
 
@@ -514,7 +532,8 @@
               </div>
             </div>
 
-            <!-- Score -->
+            <!-- Date -->
+
             <time
               datetime="2026-09-20T20:30"
               class="py-1 text-center font-bold md:text-lg"
@@ -525,6 +544,7 @@
             </time>
 
             <!-- Desktop team 2 -->
+
             <div
               class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
             >
@@ -536,27 +556,27 @@
 
               <span class="font-medium"> Vartica FC </span>
             </div>
-
-            <!-- FT -->
           </article>
 
           <!-- Match 2 -->
+
           <article
             class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
           >
             <!-- Mobile teams / Desktop team 1 -->
+
             <div
               class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
             >
               <div
-                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+                class="flex flex-row-reverse items-center justify-end gap-2 text-base md:flex-row md:text-lg"
               >
                 <span class="font-medium md:order-1"> Abrar United </span>
 
                 <img
                   src="./asset/abrar-united-logo.png"
                   alt="Abrar United"
-                  class="w-7.5 md:w-9 md:order-2"
+                  class="w-7.5 md:order-2 md:w-9"
                 />
               </div>
 
@@ -572,6 +592,7 @@
             </div>
 
             <!-- Date -->
+
             <time
               datetime="2026-09-20T20:30"
               class="py-1 text-center font-bold md:text-lg"
@@ -580,7 +601,9 @@
               <br />
               20:30
             </time>
+
             <!-- Desktop team 2 -->
+
             <div
               class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
             >
@@ -592,13 +615,9 @@
 
               <span class="font-medium"> Emporio de Montza </span>
             </div>
-
-            <!-- FT -->
           </article>
         </div>
       </section>
-
-      <!-- ==================== UPCOMING MATCHES ==================== -->
 
       <!-- ==================== STANDINGS ==================== -->
 
@@ -761,8 +780,9 @@
           class="flex w-full gap-2.5 overflow-x-auto pb-1 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible"
         >
           <!-- News card -->
+
           <article
-            class="flex h-66 w-37.5 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
+            class="flex h-66 w-50 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
           >
             <div class="h-30 w-full shrink-0 md:h-40">
               <img
@@ -795,8 +815,9 @@
           </article>
 
           <!-- News card -->
+
           <article
-            class="flex h-66 w-37.5 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
+            class="flex h-66 w-50 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
           >
             <div class="h-30 w-full shrink-0 md:h-40">
               <img
@@ -829,8 +850,9 @@
           </article>
 
           <!-- News card -->
+
           <article
-            class="flex h-66 w-37.5 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
+            class="flex h-66 w-50 shrink-0 flex-col overflow-hidden rounded-lg border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743] md:h-80 md:w-full"
           >
             <div class="h-30 w-full shrink-0 md:h-40">
               <img
@@ -888,11 +910,11 @@
             <nav>
               <ul class="flex flex-col gap-2 text-base">
                 <li>
-                  <a href="#hero" class="hover:underline"> Home </a>
+                  <a href="./index.html" class="hover:underline"> Home </a>
                 </li>
 
                 <li>
-                  <a href="#about" class="hover:underline"> About </a>
+                  <a href="./about.html" class="hover:underline"> About </a>
                 </li>
 
                 <li>
@@ -908,7 +930,7 @@
                 </li>
 
                 <li>
-                  <a href="#news" class="hover:underline"> News </a>
+                  <a href="./news.html" class="hover:underline"> News </a>
                 </li>
               </ul>
             </nav>
