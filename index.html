@@ -14,7 +14,7 @@
     />
   </head>
 
-  <body class="bg-[#FDFAEE] text-[#2C5743]">
+  <body class="bg-[#FDFAEE] text-[#2C5743] font-barlow">
     <!-- ==================== HEADER ==================== -->
 
     <header
@@ -48,7 +48,7 @@
         </a>
 
         <a
-          href="#about"
+          href="./about.html"
           class="font-medium transition-opacity hover:opacity-70"
         >
           About
@@ -58,7 +58,7 @@
         <div class="group relative">
           <button type="button" class="flex items-center gap-1 font-medium">
             Teams
-            <i class="ph-bold ph-caret-down text-sm"></i>
+            <i class="ph-bold ph-caret-down text-base"></i>
           </button>
 
           <div
@@ -66,42 +66,42 @@
           >
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Abrar United
             </a>
 
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Emporio de Montza
             </a>
 
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Deportivo de Esperanza
             </a>
 
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Al Barq
             </a>
 
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Sparta FC
             </a>
 
             <a
               href="#"
-              class="block rounded px-3 py-2 text-sm hover:bg-white/10"
+              class="block rounded px-3 py-2 text-base hover:bg-white/10"
             >
               Vartica FC
             </a>
@@ -174,10 +174,7 @@
     <main class="mx-auto w-full max-w-300">
       <!-- ==================== HERO ==================== -->
 
-      <section
-        id="hero"
-        class="flex flex-col px-5 py-7.5 font-barlow md:px-10 md:py-10"
-      >
+      <section id="hero" class="flex flex-col px-5 py-7.5 md:px-10 md:py-10">
         <article
           class="flex h-60 w-full flex-col justify-end rounded-xl bg-gray-500 p-5 font-extrabold md:h-100 md:p-8"
         >
@@ -186,7 +183,7 @@
           </p>
 
           <h2
-            class="max-w-4xl text-2xl uppercase leading-6 text-white md:text-5xl md:leading-[1.05]"
+            class="max-w-4xl text-2xl uppercase leading-6 text-white md:text-5xl md:leading-[1.05] line-clamp-2"
           >
             Ketegangan memuncak di papan atas. Setiap laga kini menjadi penentu
             menuju gelar juara AFL.
@@ -196,10 +193,7 @@
 
       <!-- ==================== CLUBS ==================== -->
 
-      <section
-        id="clubs"
-        class="mb-7.5 flex flex-col gap-2.5 font-barlow md:mb-10"
-      >
+      <section id="clubs" class="mb-7.5 flex flex-col gap-2.5 md:mb-10">
         <h2
           class="px-5 text-3xl font-black uppercase leading-8 text-[#2C5743] md:px-10 md:text-4xl md:leading-10"
         >
@@ -331,228 +325,286 @@
 
       <!-- ==================== LATEST RESULTS ==================== -->
 
+      <!-- Latest Results -->
+      <!-- Latest Results -->
       <section
-        id="result"
-        class="mb-7.5 flex flex-col gap-2.5 px-5 font-barlow md:mb-10 md:px-10"
+        id="results"
+        class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
       >
         <h2
-          class="text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
+          class="font-barlow text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
         >
           Latest Results
         </h2>
 
         <div
-          class="flex w-full flex-col rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] p-2 font-space-grotesk text-[#2C5743] md:p-4"
+          class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743]"
         >
-          <time
-            datetime="2026-09-11"
-            class="my-5 text-center text-xl font-bold md:my-6 md:text-2xl"
+          <!-- Date -->
+          <div
+            class="border-b border-[#7BBA9C] px-4 py-5 text-center md:px-6 md:py-5"
           >
-            Sat, Sep 11
-          </time>
-
-          <hr class="border-[#7BBA9C]" />
-
-          <div class="flex flex-col">
-            <!-- Match -->
-            <article
-              class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-3 py-4 md:grid-cols-[1fr_auto_1fr_auto] md:gap-8 md:px-6 md:py-5"
-            >
-              <!-- Teams -->
-              <div class="flex flex-col gap-3 md:contents">
-                <div
-                  class="flex items-center gap-2 text-base md:justify-end md:text-lg"
-                >
-                  <h3 class="order-2 font-medium md:order-1">Sparta FC</h3>
-
-                  <img
-                    src="./asset/sparta-fc-logo.png"
-                    alt="Sparta FC"
-                    class="order-1 w-7.5 md:order-2 md:w-9"
-                  />
-                </div>
-
-                <div
-                  class="flex items-center gap-2 text-base md:col-start-3 md:row-start-1 md:text-lg"
-                >
-                  <img
-                    src="./asset/vartica-fc-logo.png"
-                    alt="Vartica FC"
-                    class="w-7.5 md:w-9"
-                  />
-
-                  <h3 class="font-medium">Vartica FC</h3>
-                </div>
-              </div>
-
-              <!-- Score -->
-              <div
-                class="row-span-2 flex flex-col justify-evenly rounded bg-[#61997E] px-2.5 py-1 font-bold text-white md:col-start-2 md:row-start-1"
-              >
-                <span>2</span>
-                <hr class="border-white/50" />
-                <span>1</span>
-              </div>
-
-              <!-- Status -->
-              <div
-                class="row-span-2 flex border-l-2 border-[#7BBA9C] pl-2.5 font-bold md:col-start-4 md:row-start-1"
-              >
-                <span class="self-center"> FT </span>
-              </div>
-            </article>
-
-            <hr class="border-[#7BBA9C]" />
-
-            <!-- Match -->
-            <article
-              class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-3 py-4 md:grid-cols-[1fr_auto_1fr_auto] md:gap-8 md:px-6 md:py-5"
-            >
-              <!-- Teams -->
-              <div class="flex flex-col gap-3 md:contents">
-                <div
-                  class="flex items-center gap-2 text-base md:justify-end md:text-lg"
-                >
-                  <h3 class="order-2 font-medium md:order-1">Abrar United</h3>
-
-                  <img
-                    src="./asset/abrar-united-logo.png"
-                    alt="Abrar United"
-                    class="order-1 w-7.5 md:order-2 md:w-9"
-                  />
-                </div>
-
-                <div
-                  class="flex items-center gap-2 text-base md:col-start-3 md:row-start-1 md:text-lg"
-                >
-                  <img
-                    src="./asset/vartica-fc-logo.png"
-                    alt="Emporio de Montza"
-                    class="w-7.5 md:w-9"
-                  />
-
-                  <h3 class="font-medium">Emporio de Montza</h3>
-                </div>
-              </div>
-
-              <!-- Score -->
-              <div
-                class="row-span-2 flex flex-col justify-evenly rounded bg-[#61997E] px-2.5 py-1 font-bold text-white md:col-start-2 md:row-start-1"
-              >
-                <span>2</span>
-                <hr class="border-white/50" />
-                <span>1</span>
-              </div>
-
-              <!-- Status -->
-              <div
-                class="row-span-2 flex border-l-2 border-[#7BBA9C] pl-2.5 font-bold md:col-start-4 md:row-start-1"
-              >
-                <span class="self-center"> FT </span>
-              </div>
-            </article>
+            <p class="font-barlow text-xl font-bold md:text-2xl">Sat, Sep 11</p>
           </div>
+
+          <!-- Match 1 -->
+          <article
+            class="grid grid-cols-[1fr_auto_auto] items-center gap-3 border-b border-[#7BBA9C] px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
+          >
+            <!-- Mobile teams / Desktop team 1 -->
+            <div
+              class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
+            >
+              <div
+                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+              >
+                <span class="font-medium md:order-1"> Sparta FC </span>
+
+                <img
+                  src="./asset/sparta-fc-logo.png"
+                  alt="Sparta FC"
+                  class="w-7.5 md:w-9 md:order-2"
+                />
+              </div>
+
+              <div class="flex items-center gap-2 text-base md:hidden">
+                <img
+                  src="./asset/vartica-fc-logo.png"
+                  alt="Vartica FC"
+                  class="w-7.5 md:w-9"
+                />
+
+                <span class="font-medium"> Vartica FC </span>
+              </div>
+            </div>
+
+            <!-- Score -->
+            <div
+              class="row-span-2 flex flex-col items-center justify-center rounded-md bg-[#5F9D7F] px-2.5 py-1.5 font-barlow font-bold leading-none text-white md:row-span-1 md:col-start-3 md:flex-row md:gap-2 md:bg-transparent md:px-3 md:py-0 md:text-[#2C5743]"
+            >
+              <span class="text-lg md:text-xl">2</span>
+              <span class="text-lg md:text-xl">1</span>
+            </div>
+
+            <!-- Desktop team 2 -->
+            <div
+              class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
+            >
+              <img
+                src="./asset/vartica-fc-logo.png"
+                alt="Vartica FC"
+                class="w-7.5 md:w-9"
+              />
+
+              <span class="font-medium"> Vartica FC </span>
+            </div>
+
+            <!-- FT -->
+            <div
+              class="row-span-2 border-l-2 border-[#7BBA9C] pl-3 text-base font-bold md:row-span-1 md:col-start-5 md:pl-5 md:text-base"
+            >
+              FT
+            </div>
+          </article>
+
+          <!-- Match 2 -->
+          <article
+            class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
+          >
+            <!-- Mobile teams / Desktop team 1 -->
+            <div
+              class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
+            >
+              <div
+                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+              >
+                <span class="font-medium md:order-1"> Abrar United </span>
+
+                <img
+                  src="./asset/abrar-united-logo.png"
+                  alt="Abrar United"
+                  class="w-7.5 md:w-9 md:order-2"
+                />
+              </div>
+
+              <div class="flex items-center gap-2 text-base md:hidden">
+                <img
+                  src="./asset/emporio-de-montza-logo.png"
+                  alt="Emporio de Montza"
+                  class="w-7.5 md:w-9"
+                />
+
+                <span class="font-medium"> Emporio de Montza </span>
+              </div>
+            </div>
+
+            <!-- Score -->
+            <div
+              class="row-span-2 flex flex-col items-center justify-center rounded-md bg-[#5F9D7F] px-2.5 py-1.5 font-barlow font-bold leading-none text-white md:row-span-1 md:col-start-3 md:flex-row md:gap-2 md:bg-transparent md:px-3 md:py-0 md:text-[#2C5743]"
+            >
+              <span class="text-lg md:text-xl">2</span>
+              <span class="text-lg md:text-xl">1</span>
+            </div>
+
+            <!-- Desktop team 2 -->
+            <div
+              class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
+            >
+              <img
+                src="./asset/emporio-de-montza-logo.png"
+                alt="Emporio de Montza"
+                class="w-7.5 md:w-9"
+              />
+
+              <span class="font-medium"> Emporio de Montza </span>
+            </div>
+
+            <!-- FT -->
+            <div
+              class="row-span-2 border-l-2 border-[#7BBA9C] pl-3 text-base font-bold md:row-span-1 md:col-start-5 md:pl-5 md:text-base"
+            >
+              FT
+            </div>
+          </article>
         </div>
       </section>
-
-      <!-- ==================== UPCOMING MATCHES ==================== -->
-
       <section
-        id="upcoming"
-        class="mb-7.5 flex flex-col gap-2.5 px-5 font-barlow md:mb-10 md:px-10"
+        id="results"
+        class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
       >
         <h2
-          class="text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
+          class="font-barlow text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
         >
           Upcoming Matches
         </h2>
 
         <div
-          class="flex w-full flex-col rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] p-2 font-space-grotesk text-[#2C5743] md:p-4"
+          class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] font-space-grotesk text-[#2C5743]"
         >
-          <div class="flex flex-col">
-            <!-- Match -->
-            <article
-              class="grid grid-cols-[1fr_auto] items-center gap-4 px-3 py-4 md:grid-cols-[1fr_auto] md:px-6 md:py-5"
+          <!-- Date -->
+
+          <!-- Match 1 -->
+          <article
+            class="grid grid-cols-[1fr_auto_auto] items-center gap-3 border-b border-[#7BBA9C] px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
+          >
+            <!-- Mobile teams / Desktop team 1 -->
+            <div
+              class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
             >
-              <div class="flex flex-col gap-3">
-                <div class="flex items-center gap-2 text-base md:text-lg">
-                  <img
-                    src="./asset/sparta-fc-logo.png"
-                    alt="Sparta FC"
-                    class="w-7.5 md:w-9"
-                  />
+              <div
+                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+              >
+                <span class="font-medium md:order-1"> Sparta FC </span>
 
-                  <h3 class="font-medium">Sparta FC</h3>
-                </div>
-
-                <div class="flex items-center gap-2 text-base md:text-lg">
-                  <img
-                    src="./asset/vartica-fc-logo.png"
-                    alt="Vartica FC"
-                    class="w-7.5 md:w-9"
-                  />
-
-                  <h3 class="font-medium">Vartica FC</h3>
-                </div>
+                <img
+                  src="./asset/sparta-fc-logo.png"
+                  alt="Sparta FC"
+                  class="w-7.5 md:w-9 md:order-2"
+                />
               </div>
 
-              <time
-                datetime="2026-09-20T20:30"
-                class="border-l-2 border-[#7BBA9C] py-1 pl-3 text-right font-bold md:pl-6 md:text-lg"
-              >
-                Sep 20
-                <br />
-                20:30
-              </time>
-            </article>
+              <div class="flex items-center gap-2 text-base md:hidden">
+                <img
+                  src="./asset/vartica-fc-logo.png"
+                  alt="Vartica FC"
+                  class="w-7.5 md:w-9"
+                />
 
-            <hr class="border-[#7BBA9C]" />
+                <span class="font-medium"> Vartica FC </span>
+              </div>
+            </div>
 
-            <!-- Match -->
-            <article
-              class="grid grid-cols-[1fr_auto] items-center gap-4 px-3 py-4 md:grid-cols-[1fr_auto] md:px-6 md:py-5"
+            <!-- Score -->
+            <time
+              datetime="2026-09-20T20:30"
+              class="py-1 text-center font-bold md:text-lg"
             >
-              <div class="flex flex-col gap-3">
-                <div class="flex items-center gap-2 text-base md:text-lg">
-                  <img
-                    src="./asset/sparta-fc-logo.png"
-                    alt="Sparta FC"
-                    class="w-7.5 md:w-9"
-                  />
+              Sep 20
+              <br />
+              20:30
+            </time>
 
-                  <h3 class="font-medium">Sparta FC</h3>
-                </div>
+            <!-- Desktop team 2 -->
+            <div
+              class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
+            >
+              <img
+                src="./asset/vartica-fc-logo.png"
+                alt="Vartica FC"
+                class="w-7.5 md:w-9"
+              />
 
-                <div class="flex items-center gap-2 text-base md:text-lg">
-                  <img
-                    src="./asset/vartica-fc-logo.png"
-                    alt="Vartica FC"
-                    class="w-7.5 md:w-9"
-                  />
+              <span class="font-medium"> Vartica FC </span>
+            </div>
 
-                  <h3 class="font-medium">Vartica FC</h3>
-                </div>
+            <!-- FT -->
+          </article>
+
+          <!-- Match 2 -->
+          <article
+            class="grid grid-cols-[1fr_auto_auto] items-center gap-3 px-5 py-4 md:grid-cols-[auto_1fr_auto_1fr_auto] md:px-6 md:py-5"
+          >
+            <!-- Mobile teams / Desktop team 1 -->
+            <div
+              class="flex flex-col gap-3 md:col-start-2 md:flex-row md:items-center md:justify-end md:gap-2"
+            >
+              <div
+                class="flex flex-row-reverse justify-end items-center gap-2 text-base md:text-lg md:flex-row"
+              >
+                <span class="font-medium md:order-1"> Abrar United </span>
+
+                <img
+                  src="./asset/abrar-united-logo.png"
+                  alt="Abrar United"
+                  class="w-7.5 md:w-9 md:order-2"
+                />
               </div>
 
-              <time
-                datetime="2026-09-20T21:10"
-                class="border-l-2 border-[#7BBA9C] py-1 pl-3 text-right font-bold md:pl-6 md:text-lg"
-              >
-                Sep 20
-                <br />
-                21:10
-              </time>
-            </article>
-          </div>
+              <div class="flex items-center gap-2 text-base md:hidden">
+                <img
+                  src="./asset/emporio-de-montza-logo.png"
+                  alt="Emporio de Montza"
+                  class="w-7.5 md:w-9"
+                />
+
+                <span class="font-medium"> Emporio de Montza </span>
+              </div>
+            </div>
+
+            <!-- Date -->
+            <time
+              datetime="2026-09-20T20:30"
+              class="py-1 text-center font-bold md:text-lg"
+            >
+              Sep 20
+              <br />
+              20:30
+            </time>
+            <!-- Desktop team 2 -->
+            <div
+              class="hidden items-center gap-2 text-lg md:col-start-4 md:flex"
+            >
+              <img
+                src="./asset/emporio-de-montza-logo.png"
+                alt="Emporio de Montza"
+                class="w-7.5 md:w-9"
+              />
+
+              <span class="font-medium"> Emporio de Montza </span>
+            </div>
+
+            <!-- FT -->
+          </article>
         </div>
       </section>
+
+      <!-- ==================== UPCOMING MATCHES ==================== -->
 
       <!-- ==================== STANDINGS ==================== -->
 
       <section
         id="standings"
-        class="mb-7.5 flex flex-col gap-2.5 px-5 font-barlow md:mb-10 md:px-10"
+        class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
       >
         <h2
           class="text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
@@ -697,7 +749,7 @@
 
       <section
         id="news"
-        class="mb-7.5 flex flex-col gap-2.5 px-5 font-barlow md:mb-10 md:px-10"
+        class="mb-7.5 flex flex-col gap-2.5 px-5 md:mb-10 md:px-10"
       >
         <h2
           class="text-3xl font-black uppercase leading-8 text-[#2C5743] md:text-4xl md:leading-10"
@@ -722,7 +774,7 @@
 
             <div class="flex flex-1 flex-col gap-2 p-2.5 md:p-4">
               <span
-                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-xs"
+                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-base"
               >
                 NEWS
               </span>
@@ -735,7 +787,7 @@
 
               <time
                 datetime="2026-09-19"
-                class="mt-auto text-[10px] leading-3 opacity-70 md:text-xs"
+                class="mt-auto text-[10px] leading-3 opacity-70 md:text-base"
               >
                 Monday, 19 September 2026
               </time>
@@ -756,7 +808,7 @@
 
             <div class="flex flex-1 flex-col gap-2 p-2.5 md:p-4">
               <span
-                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-xs"
+                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-base"
               >
                 NEWS
               </span>
@@ -769,7 +821,7 @@
 
               <time
                 datetime="2026-09-19"
-                class="mt-auto text-[10px] leading-3 opacity-70 md:text-xs"
+                class="mt-auto text-[10px] leading-3 opacity-70 md:text-base"
               >
                 Monday, 19 September 2026
               </time>
@@ -790,7 +842,7 @@
 
             <div class="flex flex-1 flex-col gap-2 p-2.5 md:p-4">
               <span
-                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-xs"
+                class="self-start rounded-sm bg-[#2C5743] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white md:text-base"
               >
                 NEWS
               </span>
@@ -803,7 +855,7 @@
 
               <time
                 datetime="2026-09-19"
-                class="mt-auto text-[10px] leading-3 opacity-70 md:text-xs"
+                class="mt-auto text-[10px] leading-3 opacity-70 md:text-base"
               >
                 Monday, 19 September 2026
               </time>
@@ -827,14 +879,14 @@
               Abu Dzar Futsal League
             </p>
 
-            <p class="text-sm opacity-80">26–27</p>
+            <p class="text-base opacity-80">26–27</p>
           </div>
 
           <div class="flex flex-col gap-3 md:w-40">
             <h2 class="text-lg font-bold">Menu</h2>
 
             <nav>
-              <ul class="flex flex-col gap-2 text-sm">
+              <ul class="flex flex-col gap-2 text-base">
                 <li>
                   <a href="#hero" class="hover:underline"> Home </a>
                 </li>
@@ -873,9 +925,7 @@
           />
         </div>
 
-        <hr class="border-white/30" />
-
-        <div class="text-xs opacity-70">
+        <div class="text-base opacity-70">
           &copy; AFL 2026 | All Rights Reserved
         </div>
       </div>
