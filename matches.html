@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Matches | AFL</title>
+
     <meta
       name="description"
       content="Abu Dzar Futsal League match results and fixtures."
@@ -40,6 +41,7 @@
       </a>
 
       <!-- Desktop Navigation -->
+
       <nav aria-label="Main navigation" class="hidden md:block">
         <ul class="flex items-center gap-8 text-base font-semibold">
           <li>
@@ -55,6 +57,7 @@
           </li>
 
           <!-- Teams -->
+
           <li class="group relative">
             <button
               type="button"
@@ -155,6 +158,7 @@
       </nav>
 
       <!-- Mobile Menu Button -->
+
       <button
         id="menu-button"
         type="button"
@@ -191,26 +195,33 @@
         class="absolute right-0 top-0 flex h-full w-[80%] max-w-sm flex-col bg-[#2C5743] px-7 pb-10 pt-28 text-white shadow-xl"
       >
         <div class="flex flex-col gap-5 text-xl">
-          <a href="./index.html" class="mobile-link">Home</a>
+          <a href="./index.html" class="mobile-link"> Home </a>
 
-          <a href="./about.html" class="mobile-link">About</a>
+          <a href="./about.html" class="mobile-link"> About </a>
 
           <div class="flex flex-col gap-3">
             <p>Teams</p>
 
             <div class="flex flex-col gap-2 pl-4 text-base text-white/70">
-              <a href="#" class="mobile-link">Abrar United</a>
-              <a href="#" class="mobile-link">Emporio de Montza</a>
+              <a href="#" class="mobile-link"> Abrar United </a>
+
+              <a href="#" class="mobile-link"> Emporio de Montza </a>
+
               <a href="#" class="mobile-link"> Deportivo de Esperanza </a>
-              <a href="#" class="mobile-link">Al Barq</a>
-              <a href="#" class="mobile-link">Sparta FC</a>
-              <a href="#" class="mobile-link">Vartica FC</a>
+
+              <a href="#" class="mobile-link"> Al Barq </a>
+
+              <a href="#" class="mobile-link"> Sparta FC </a>
+
+              <a href="#" class="mobile-link"> Vartica FC </a>
             </div>
           </div>
 
-          <a href="./matches.html" class="mobile-link">Matches</a>
-          <a href="./standings.html" class="mobile-link">Standings</a>
-          <a href="./news.html" class="mobile-link">News</a>
+          <a href="./matches.html" class="mobile-link"> Matches </a>
+
+          <a href="./standings.html" class="mobile-link"> Standings </a>
+
+          <a href="./news.html" class="mobile-link"> News </a>
         </div>
       </nav>
     </div>
@@ -218,7 +229,8 @@
     <!-- ==================== MAIN ==================== -->
 
     <main class="w-full">
-      <!-- Page Banner -->
+      <!-- ==================== PAGE BANNER ==================== -->
+
       <section aria-labelledby="matches-title" class="pb-7.5 md:pb-10">
         <div
           class="relative flex min-h-60 items-end overflow-hidden bg-[#2C5743] md:min-h-80"
@@ -250,7 +262,8 @@
         </div>
       </section>
 
-      <!-- Results -->
+      <!-- ==================== RESULTS ==================== -->
+
       <section
         aria-labelledby="results-title"
         class="mx-auto max-w-250 px-5 pb-7.5 md:px-10 md:pb-10"
@@ -270,57 +283,75 @@
           </h2>
         </div>
 
-        <!-- Week Selector -->
+        <!-- ==================== WEEK CAROUSEL ==================== -->
+
         <div
-          class="mb-7 flex w-full overflow-x-auto rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] p-1.5"
+          id="week-tabs"
+          class="mb-7 flex w-full snap-x snap-mandatory scroll-smooth overflow-x-auto rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] p-1.5"
           role="tablist"
           aria-label="Match weeks"
         >
           <button
             type="button"
-            class="week-button min-w-20 flex-1 rounded-lg bg-[#2C5743] px-4 py-2.5 font-space-grotesk text-sm font-bold text-white transition md:text-base"
+            id="week-tab-1"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg bg-[#2C5743] px-5 py-2.5 font-space-grotesk text-sm font-bold text-white transition md:flex-1 md:text-base"
             data-week="1"
             role="tab"
             aria-selected="true"
+            aria-controls="week-content-1"
           >
             Week 1
           </button>
 
           <button
             type="button"
-            class="week-button min-w-20 flex-1 rounded-lg px-4 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:text-base"
+            id="week-tab-2"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
             data-week="2"
             role="tab"
             aria-selected="false"
+            aria-controls="week-content-2"
           >
             Week 2
           </button>
 
           <button
             type="button"
-            class="week-button min-w-20 flex-1 rounded-lg px-4 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:text-base"
+            id="week-tab-3"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
             data-week="3"
             role="tab"
             aria-selected="false"
+            aria-controls="week-content-3"
           >
             Week 3
           </button>
 
           <button
             type="button"
-            class="week-button min-w-20 flex-1 rounded-lg px-4 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:text-base"
+            id="week-tab-4"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
             data-week="4"
             role="tab"
             aria-selected="false"
+            aria-controls="week-content-4"
           >
             Week 4
           </button>
         </div>
 
-        <!-- Week 1 -->
-        <div class="week-content" data-week-content="1">
+        <!-- ==================== WEEK 1 ==================== -->
+
+        <div
+          id="week-content-1"
+          class="week-content"
+          data-week-content="1"
+          role="tabpanel"
+          aria-labelledby="week-tab-1"
+        >
           <div class="flex flex-col gap-8">
             <!-- Saturday, 3 September -->
+
             <section aria-labelledby="date-3-september">
               <div class="mb-3 flex items-center gap-3">
                 <h3
@@ -337,16 +368,29 @@
                 class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1]"
               >
                 <!-- Match 1 -->
+
                 <article
-                  class="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
+                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
                 >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Home -->
+
+                  <div
+                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  >
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Sparta FC
                     </span>
+
+                    <img
+                      src="./asset/sparta-fc-logo.png"
+                      alt="Sparta FC"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
                   </div>
 
-                  <div class="flex flex-col items-center">
+                  <!-- Score -->
+
+                  <div class="flex min-w-14 flex-col items-center">
                     <div class="flex items-center gap-2 text-2xl font-black">
                       <span>4</span>
                       <span class="opacity-40">–</span>
@@ -360,24 +404,45 @@
                     </span>
                   </div>
 
-                  <div class="min-w-0 text-right">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Away -->
+
+                  <div class="flex min-w-0 items-center gap-2 text-left">
+                    <img
+                      src="./asset/abrar-united-logo.png"
+                      alt="Abrar United"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
+
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Abrar United
                     </span>
                   </div>
                 </article>
 
                 <!-- Match 2 -->
+
                 <article
-                  class="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
+                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
                 >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Home -->
+
+                  <div
+                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  >
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Deportivo De Esperanza
                     </span>
+
+                    <img
+                      src="./asset/deportivo-de-esperanza-logo.png"
+                      alt="Deportivo De Esperanza"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
                   </div>
 
-                  <div class="flex flex-col items-center">
+                  <!-- Score -->
+
+                  <div class="flex min-w-14 flex-col items-center">
                     <div class="flex items-center gap-2 text-2xl font-black">
                       <span>2</span>
                       <span class="opacity-40">–</span>
@@ -391,24 +456,45 @@
                     </span>
                   </div>
 
-                  <div class="min-w-0 text-right">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Away -->
+
+                  <div class="flex min-w-0 items-center gap-2 text-left">
+                    <img
+                      src="./asset/delphina-union-logo.png"
+                      alt="Delphina Union"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
+
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Delphina Union
                     </span>
                   </div>
                 </article>
 
                 <!-- Match 3 -->
+
                 <article
-                  class="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-5 md:px-7"
+                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 px-4 py-5 md:px-7"
                 >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Home -->
+
+                  <div
+                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  >
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Emporio De Montza
                     </span>
+
+                    <img
+                      src="./asset/emporio-de-montza-logo.png"
+                      alt="Emporio De Montza"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
                   </div>
 
-                  <div class="flex flex-col items-center">
+                  <!-- Score -->
+
+                  <div class="flex min-w-14 flex-col items-center">
                     <div class="flex items-center gap-2 text-2xl font-black">
                       <span>6</span>
                       <span class="opacity-40">–</span>
@@ -422,8 +508,16 @@
                     </span>
                   </div>
 
-                  <div class="min-w-0 text-right">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Away -->
+
+                  <div class="flex min-w-0 items-center gap-2 text-left">
+                    <img
+                      src="./asset/vartica-fc-logo.png"
+                      alt="Vartica FC"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
+
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Vartica FC
                     </span>
                   </div>
@@ -432,6 +526,7 @@
             </section>
 
             <!-- Sunday, 4 September -->
+
             <section aria-labelledby="date-4-september">
               <div class="mb-3 flex items-center gap-3">
                 <h3
@@ -447,16 +542,30 @@
               <div
                 class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1]"
               >
+                <!-- Match 1 -->
+
                 <article
-                  class="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-5 md:px-7"
+                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 px-4 py-5 md:px-7"
                 >
-                  <div class="min-w-0">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Home -->
+
+                  <div
+                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  >
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Sparta FC
                     </span>
+
+                    <img
+                      src="./asset/sparta-fc-logo.png"
+                      alt="Sparta FC"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
                   </div>
 
-                  <div class="flex flex-col items-center">
+                  <!-- Score -->
+
+                  <div class="flex min-w-14 flex-col items-center">
                     <div class="flex items-center gap-2 text-2xl font-black">
                       <span>2</span>
                       <span class="opacity-40">–</span>
@@ -470,8 +579,16 @@
                     </span>
                   </div>
 
-                  <div class="min-w-0 text-right">
-                    <span class="text-sm font-bold md:text-base">
+                  <!-- Away -->
+
+                  <div class="flex min-w-0 items-center gap-2 text-left">
+                    <img
+                      src="./asset/abrar-united-logo.png"
+                      alt="Abrar United"
+                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
+                    />
+
+                    <span class="min-w-0 text-sm font-bold md:text-base">
                       Abrar United
                     </span>
                   </div>
@@ -481,8 +598,15 @@
           </div>
         </div>
 
-        <!-- Week 2 -->
-        <div class="week-content hidden" data-week-content="2" role="tabpanel">
+        <!-- ==================== WEEK 2 ==================== -->
+
+        <div
+          id="week-content-2"
+          class="week-content hidden"
+          data-week-content="2"
+          role="tabpanel"
+          aria-labelledby="week-tab-2"
+        >
           <div
             class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
           >
@@ -498,8 +622,15 @@
           </div>
         </div>
 
-        <!-- Week 3 -->
-        <div class="week-content hidden" data-week-content="3" role="tabpanel">
+        <!-- ==================== WEEK 3 ==================== -->
+
+        <div
+          id="week-content-3"
+          class="week-content hidden"
+          data-week-content="3"
+          role="tabpanel"
+          aria-labelledby="week-tab-3"
+        >
           <div
             class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
           >
@@ -515,8 +646,15 @@
           </div>
         </div>
 
-        <!-- Week 4 -->
-        <div class="week-content hidden" data-week-content="4" role="tabpanel">
+        <!-- ==================== WEEK 4 ==================== -->
+
+        <div
+          id="week-content-4"
+          class="week-content hidden"
+          data-week-content="4"
+          role="tabpanel"
+          aria-labelledby="week-tab-4"
+        >
           <div
             class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
           >
@@ -607,7 +745,8 @@
     <!-- ==================== JAVASCRIPT ==================== -->
 
     <script>
-      // Mobile menu
+      // ==================== MOBILE MENU ====================
+
       const menuButton = document.getElementById("menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
       const mobileLinks = document.querySelectorAll(".mobile-link");
@@ -648,34 +787,68 @@
         }
       });
 
-      // Week selector
+      // ==================== WEEK SELECTOR ====================
+
+      const weekTabs = document.getElementById("week-tabs");
       const weekButtons = document.querySelectorAll(".week-button");
       const weekContents = document.querySelectorAll(".week-content");
 
+      function selectWeek(selectedWeek) {
+        weekButtons.forEach((button) => {
+          const isSelected = button.dataset.week === selectedWeek;
+
+          button.classList.toggle("bg-[#2C5743]", isSelected);
+
+          button.classList.toggle("text-white", isSelected);
+
+          button.classList.toggle("hover:bg-[#7BBA9C]/30", !isSelected);
+
+          button.setAttribute("aria-selected", isSelected ? "true" : "false");
+
+          if (isSelected) {
+            button.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center",
+            });
+          }
+        });
+
+        weekContents.forEach((content) => {
+          const isSelected = content.dataset.weekContent === selectedWeek;
+
+          content.classList.toggle("hidden", !isSelected);
+        });
+      }
+
       weekButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          const selectedWeek = button.dataset.week;
+          selectWeek(button.dataset.week);
+        });
+      });
 
-          // Update buttons
-          weekButtons.forEach((item) => {
-            const isSelected = item.dataset.week === selectedWeek;
+      // Keyboard navigation for the week carousel
 
-            item.classList.toggle("bg-[#2C5743]", isSelected);
+      weekButtons.forEach((button, index) => {
+        button.addEventListener("keydown", (event) => {
+          let nextIndex = index;
 
-            item.classList.toggle("text-white", isSelected);
+          if (event.key === "ArrowRight") {
+            nextIndex = Math.min(index + 1, weekButtons.length - 1);
+          }
 
-            item.classList.toggle("hover:bg-[#7BBA9C]/30", !isSelected);
+          if (event.key === "ArrowLeft") {
+            nextIndex = Math.max(index - 1, 0);
+          }
 
-            item.setAttribute("aria-selected", isSelected ? "true" : "false");
-          });
+          if (nextIndex !== index) {
+            event.preventDefault();
 
-          // Update content
-          weekContents.forEach((content) => {
-            content.classList.toggle(
-              "hidden",
-              content.dataset.weekContent !== selectedWeek,
-            );
-          });
+            const nextButton = weekButtons[nextIndex];
+
+            nextButton.focus();
+            selectWeek(nextButton.dataset.week);
+          }
         });
       });
     </script>
