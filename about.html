@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Learn more about Abudzar Futsal League, its vision, values, and purpose."
     />
     <meta name="theme-color" content="#2C5743" />
+
     <title>AFL Web | About</title>
 
     <link rel="stylesheet" href="./src/output.css" />
@@ -15,19 +17,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
     />
+    <link rel="shortcut icon" href="./asset/afl-logo.png" type="image/x-icon" />
   </head>
 
   <body class="bg-cream font-barlow text-green antialiased">
+    <!-- Header -->
     <header
       class="sticky top-0 z-50 flex h-20 items-center justify-between bg-green px-5 text-white shadow-sm md:h-22 md:px-10"
     >
-      <a href="./index.html" aria-label="AFL Home" class="group flex items-center gap-2">
+      <a
+        href="./index.html"
+        aria-label="AFL Home"
+        class="group flex items-center gap-2"
+      >
         <img
           src="./asset/afl-logo.png"
           alt="AFL Logo"
           class="w-11 transition-transform duration-300 group-hover:scale-105 md:w-13"
         />
-        <span class="afl-wordmark">AFL</span>
+        <span class="afl-wordmark text-cream">AFL</span>
       </a>
 
       <nav
@@ -38,25 +46,58 @@
         <a href="./about.html" aria-current="page" class="nav-link">About</a>
 
         <div class="group relative">
-          <button type="button" class="nav-link flex items-center gap-1.5">
+          <button
+            type="button"
+            class="nav-link flex items-center gap-1.5"
+            aria-haspopup="true"
+          >
             Teams
-            <i class="ph-bold ph-caret-down transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"></i>
+            <i
+              class="ph-bold ph-caret-down transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+            ></i>
           </button>
 
           <div
             class="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-2 pt-4 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100"
           >
-            <div class="overflow-hidden rounded-xl border border-white/10 bg-green/95 p-2 shadow-2xl backdrop-blur-xl">
-              <p class="px-3 pb-2 pt-2 font-space text-[10px] font-bold uppercase tracking-[.18em] text-white/45">
+            <div
+              class="overflow-hidden rounded-xl border border-white/10 bg-green/95 p-2 shadow-2xl backdrop-blur-xl"
+            >
+              <p
+                class="px-3 pb-2 pt-2 font-space text-[10px] font-bold uppercase tracking-[.18em] text-white/45"
+              >
                 Clubs
               </p>
 
-              <a href="./index.html#clubs" class="team-menu-link">Abrar United <i class="ph-bold ph-arrow-up-right"></i></a>
-              <a href="./index.html#clubs" class="team-menu-link">Emporio De Montza <i class="ph-bold ph-arrow-up-right"></i></a>
-              <a href="./index.html#clubs" class="team-menu-link">Deportivo De Esperanza <i class="ph-bold ph-arrow-up-right"></i></a>
-              <a href="./index.html#clubs" class="team-menu-link">Al Barq <i class="ph-bold ph-arrow-up-right"></i></a>
-              <a href="./index.html#clubs" class="team-menu-link">Sparta FC <i class="ph-bold ph-arrow-up-right"></i></a>
-              <a href="./index.html#clubs" class="team-menu-link">Vartica FC <i class="ph-bold ph-arrow-up-right"></i></a>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Abrar United
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Emporio De Montza
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Deportivo De Esperanza
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Al Barq
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Sparta FC
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Vartica FC
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -78,18 +119,25 @@
       </button>
     </header>
 
+    <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="invisible fixed inset-0 z-[100] bg-cream/30 opacity-0 backdrop-blur-2xl transition-[opacity,visibility] duration-300 md:hidden"
+      class="invisible fixed inset-0 z-[100] bg-green/60 opacity-0 backdrop-blur-xl transition-[opacity,visibility] duration-300 md:hidden"
     >
       <nav
         aria-label="Mobile navigation"
-        class="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-5 text-green"
+        class="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-5 text-cream"
       >
-        <div class="flex items-center justify-between border-b border-green/20 pb-5">
-          <a href="./index.html" aria-label="AFL Home" class="flex items-center gap-2">
+        <div
+          class="flex items-center justify-between border-b border-green/20 pb-5"
+        >
+          <a
+            href="./index.html"
+            aria-label="AFL Home"
+            class="flex items-center gap-2"
+          >
             <img src="./asset/afl-logo.png" alt="AFL Logo" class="w-11" />
-            <span class="afl-wordmark text-green">AFL</span>
+            <span class="afl-wordmark text-cream">AFL</span>
           </a>
 
           <button
@@ -103,8 +151,19 @@
         </div>
 
         <div class="flex flex-1 flex-col pt-5">
-          <a href="./index.html" class="mobile-main-link mobile-link">Home <i class="ph-bold ph-arrow-up-right"></i></a>
-          <a href="./about.html" aria-current="page" class="mobile-main-link mobile-link">About <i class="ph-bold ph-arrow-up-right"></i></a>
+          <a href="./index.html" class="mobile-main-link mobile-link">
+            Home
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
+
+          <a
+            href="./about.html"
+            aria-current="page"
+            class="mobile-main-link mobile-link"
+          >
+            About
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
 
           <div class="border-b border-green/20">
             <button
@@ -115,193 +174,317 @@
               class="mobile-main-link"
             >
               Teams
+
               <span class="flex h-10 w-10 items-center justify-center">
                 <i id="teams-plus" class="ph-bold ph-plus text-2xl"></i>
-                <i id="teams-minus" class="ph-bold ph-minus hidden text-2xl"></i>
+                <i
+                  id="teams-minus"
+                  class="ph-bold ph-minus hidden text-2xl"
+                ></i>
               </span>
             </button>
 
-            <div id="mobile-team-list" class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300">
+            <div
+              id="mobile-team-list"
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out"
+            >
               <div class="overflow-hidden">
-                <div class="flex flex-col pb-5 pt-2 font-space text-[.95rem] font-bold">
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Abrar United <i class="ph-bold ph-arrow-up-right"></i></a>
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Emporio De Montza <i class="ph-bold ph-arrow-up-right"></i></a>
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Deportivo De Esperanza <i class="ph-bold ph-arrow-up-right"></i></a>
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Al Barq <i class="ph-bold ph-arrow-up-right"></i></a>
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Sparta FC <i class="ph-bold ph-arrow-up-right"></i></a>
-                  <a href="./index.html#clubs" class="mobile-team-link mobile-link">Vartica FC <i class="ph-bold ph-arrow-up-right"></i></a>
+                <div
+                  class="flex flex-col pb-5 pt-2 font-space text-[.95rem] font-bold"
+                >
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Abrar United
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Emporio De Montza
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Deportivo De Esperanza
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Al Barq
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Sparta FC
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Vartica FC
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <a href="./matches.html" class="mobile-main-link mobile-link">Matches <i class="ph-bold ph-arrow-up-right"></i></a>
-          <a href="./standings.html" class="mobile-main-link mobile-link">Standings <i class="ph-bold ph-arrow-up-right"></i></a>
-          <a href="./news.html" class="mobile-main-link mobile-link">News <i class="ph-bold ph-arrow-up-right"></i></a>
+          <a href="./matches.html" class="mobile-main-link mobile-link">
+            Matches
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
+
+          <a href="./standings.html" class="mobile-main-link mobile-link">
+            Standings
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
+
+          <a href="./news.html" class="mobile-main-link mobile-link">
+            News
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
         </div>
 
-        <div class="mt-8 flex items-center justify-between border-t border-green/20 pt-5 font-space">
-          <span class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50">AFL 26–27</span>
-          <span class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50">Abu Dzar</span>
+        <div
+          class="mt-8 flex items-center justify-between border-t border-green/20 pt-5 font-space"
+        >
+          <span
+            class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50"
+          >
+            AFL 26–27
+          </span>
+
+          <span
+            class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50"
+          >
+            Abu Dzar
+          </span>
         </div>
       </nav>
     </div>
 
-    <main>
+    <main class="mx-auto w-full max-w-300">
+      <!-- Page Hero -->
       <section aria-labelledby="about-title" class="pb-7.5 md:pb-10">
-        <div class="relative flex min-h-60 items-end overflow-hidden bg-green md:min-h-80">
+        <div
+          class="relative flex min-h-60 items-end overflow-hidden bg-green md:min-h-80"
+        >
           <img
-            src="./asset/Futsal Team Lineup on a Moody Court.png"
+            src="./asset/about-banner.jpg"
             alt=""
             class="absolute inset-0 h-full w-full object-cover opacity-60"
           />
 
-          <div class="absolute inset-0 bg-gradient-to-t from-green via-green/40 to-transparent"></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-green via-green/40 to-transparent"
+          ></div>
 
-          <div class="relative z-10 mx-auto flex w-full max-w-300 flex-col gap-2 px-5 pb-6 md:px-10 md:pb-8">
-            <p class="font-space text-xs font-medium uppercase tracking-[.18em] text-white/70 md:text-sm">
+          <div class="relative z-10 flex max-w-3xl flex-col gap-2 p-5 md:p-8">
+            <p
+              class="font-space text-xs font-medium uppercase tracking-[.18em] text-white/70 md:text-sm"
+            >
               Abudzar Futsal League
             </p>
 
-            <h1 id="about-title" class="text-5xl font-black uppercase leading-[.85] text-white md:text-7xl">
+            <h1
+              id="about-title"
+              class="text-5xl font-black uppercase leading-[.85] text-white md:text-7xl"
+            >
               About AFL
             </h1>
           </div>
         </div>
       </section>
 
-      <div class="mx-auto max-w-250 px-5 md:px-10">
-        <section aria-labelledby="about-afl-title" class="content-section">
-          <article class="about-feature">
-            <figure class="about-feature-image">
-              <img
-                src="./asset/about-1.png"
-                alt="Santri participating in Abudzar Futsal League activities"
-              />
-            </figure>
+      <!-- About AFL -->
+      <section
+        aria-labelledby="about-afl-title"
+        class="content-section px-5 md:px-10"
+      >
+        <article class="about-feature">
+          <figure class="about-feature-image">
+            <img
+              src="./asset/about-1.png"
+              alt="Santri participating in Abudzar Futsal League activities"
+            />
+          </figure>
 
-            <div class="about-copy">
-              <h2 id="about-afl-title" class="about-heading">About AFL</h2>
+          <div class="about-copy">
+            <h2 id="about-afl-title" class="about-heading">About AFL</h2>
 
-              <div class="about-text">
-                <p>
-                  Abudzar Futsal League (AFL) adalah liga futsal resmi yang diselenggarakan di lingkungan Pondok Tahfizh Abudzar.
-                </p>
+            <div class="about-text">
+              <p>
+                Abudzar Futsal League (AFL) adalah liga futsal resmi yang
+                diselenggarakan di lingkungan Pondok Tahfizh Abudzar.
+              </p>
 
-                <p>
-                  Kompetisi mandiri ini hadir sebagai wadah dinamis bagi para santri untuk mengekspresikan bakat dan menyalurkan gairah tinggi mereka di dunia olahraga.
-                </p>
+              <p>
+                Kompetisi mandiri ini hadir sebagai wadah dinamis bagi para
+                santri untuk mengekspresikan bakat dan menyalurkan gairah tinggi
+                mereka di dunia olahraga.
+              </p>
 
-                <p>
-                  Di sela-sela aktivitas mulia menghafal Al-Qur'an, AFL menjadi oase positif untuk menjaga kebugaran fisik sekaligus mengasah mental kompetitif yang sehat dan terstruktur.
-                </p>
-              </div>
+              <p>
+                Di sela-sela aktivitas mulia menghafal Al-Qur'an, AFL menjadi
+                oase positif untuk menjaga kebugaran fisik sekaligus mengasah
+                mental kompetitif yang sehat dan terstruktur.
+              </p>
             </div>
-          </article>
-        </section>
-
-        <section aria-labelledby="tournament-title" class="content-section">
-          <article class="about-split">
-            <figure class="about-split-image">
-              <img
-                src="./asset/about-2.png"
-                alt="AFL futsal match between two teams"
-              />
-            </figure>
-
-            <div class="about-copy">
-              <h2 id="tournament-title" class="about-heading">
-                More Than Just a Tournament
-              </h2>
-
-              <div class="about-text">
-                <p>
-                  Kami percaya bahwa di dalam tubuh yang sehat, terdapat jiwa yang kuat untuk mengemban ayat-ayat suci.
-                </p>
-
-                <p>
-                  Di AFL, lapangan hijau bukan sekadar tempat mengejar kemenangan, melainkan panggung tempat impian, kerja keras, dan persaudaraan bertemu.
-                </p>
-
-                <p>
-                  Liga ini berkomitmen penuh untuk melahirkan atmosfer kompetisi yang seru dan menghibur, tanpa sedikit pun mengesampingkan adab, kejujuran, dan rasa hormat (respect).
-                </p>
-
-                <p>
-                  Bagi kami, kemenangan sejati adalah ketika mampu berjuang habis-habisan di lapangan dengan tetap menjunjung tinggi akhlak mulia.
-                </p>
-              </div>
-            </div>
-          </article>
-        </section>
-
-        <section aria-labelledby="values-title" class="content-section">
-          <h2 id="values-title" class="about-heading">
-            Our Vision & Core Values
-          </h2>
-
-          <div class="grid gap-4 sm:grid-cols-2">
-            <article class="value-card">
-              <img
-                src="./asset/vision.jpg"
-                alt="AFL players working together as a team"
-              />
-
-              <div>
-                <h3>Our Vision</h3>
-                <p>
-                  Mewujudkan generasi penghafal Al-Qur'an yang kuat secara fisik, unggul dalam kerja sama, dan menjadi teladan dalam sportivitas, baik di dalam maupun di luar lapangan.
-                </p>
-              </div>
-            </article>
-
-            <article class="value-card">
-              <img
-                src="./asset/physical-wellbeing.jpg"
-                alt="AFL players staying active through futsal"
-              />
-
-              <div>
-                <h3>Physical Well-being</h3>
-                <p>
-                  Menjaga kebugaran fisik santri demi mendukung kelancaran dan fokus dalam menghafal Al-Qur'an.
-                </p>
-              </div>
-            </article>
-
-            <article class="value-card">
-              <img
-                src="./asset/islamic-brotherhood.jpg"
-                alt="AFL players building friendship and teamwork"
-              />
-
-              <div>
-                <h3>Islamic Brotherhood</h3>
-                <p>
-                  Menjadikan setiap pertandingan sebagai sarana untuk mempererat tali silaturahmi, persaudaraan, dan rasa kebersamaan antar-santri.
-                </p>
-              </div>
-            </article>
-
-            <article class="value-card">
-              <img
-                src="./asset/ethics-sportsmanship.jpg"
-                alt="AFL players demonstrating sportsmanship"
-              />
-
-              <div>
-                <h3>Islamic Ethics & Sportsmanship</h3>
-                <p>
-                  Menanamkan nilai kedisiplinan, kemampuan mengendalikan diri, serta saling menghargai antarpemain sesuai dengan tuntunan syariat Islam.
-                </p>
-              </div>
-            </article>
           </div>
-        </section>
-      </div>
+        </article>
+      </section>
 
-      <section aria-label="AFL motto" class="mx-auto max-w-300 px-5 pb-10 md:px-10 md:pb-12">
-        <div class="relative flex min-h-70 items-center justify-center overflow-hidden rounded-2xl bg-green p-6 md:min-h-90 md:p-10">
+      <!-- More Than Just a Tournament -->
+      <section
+        aria-labelledby="tournament-title"
+        class="content-section px-5 md:px-10"
+      >
+        <article class="about-split">
+          <figure class="about-split-image">
+            <img
+              src="./asset/about-2.png"
+              alt="AFL futsal match between two teams"
+            />
+          </figure>
+
+          <div class="about-copy">
+            <h2 id="tournament-title" class="about-heading">
+              More Than Just a Tournament
+            </h2>
+
+            <div class="about-text">
+              <p>
+                Kami percaya bahwa di dalam tubuh yang sehat, terdapat jiwa yang
+                kuat untuk mengemban ayat-ayat suci.
+              </p>
+
+              <p>
+                Di AFL, lapangan hijau bukan sekadar tempat mengejar kemenangan,
+                melainkan panggung tempat impian, kerja keras, dan persaudaraan
+                bertemu.
+              </p>
+
+              <p>
+                Liga ini berkomitmen penuh untuk melahirkan atmosfer kompetisi
+                yang seru dan menghibur, tanpa sedikit pun mengesampingkan adab,
+                kejujuran, dan rasa hormat (respect).
+              </p>
+
+              <p>
+                Bagi kami, kemenangan sejati adalah ketika mampu berjuang
+                habis-habisan di lapangan dengan tetap menjunjung tinggi akhlak
+                mulia.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Vision & Values -->
+      <section
+        aria-labelledby="values-title"
+        class="content-section px-5 md:px-10"
+      >
+        <div class="section-heading">
+          <div>
+            <p
+              class="mb-1 font-space text-xs font-bold uppercase tracking-[.18em] opacity-50"
+            >
+              AFL 26–27
+            </p>
+
+            <h2 id="values-title" class="section-title">
+              Our Vision & Core Values
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="value-card">
+            <img
+              src="./asset/vision.jpg"
+              alt="AFL players working together as a team"
+            />
+
+            <div>
+              <h3>Our Vision</h3>
+              <p>
+                Mewujudkan generasi penghafal Al-Qur'an yang kuat secara fisik,
+                unggul dalam kerja sama, dan menjadi teladan dalam sportivitas,
+                baik di dalam maupun di luar lapangan.
+              </p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img
+              src="./asset/physical-wellbeing.jpg"
+              alt="AFL players staying active through futsal"
+            />
+
+            <div>
+              <h3>Physical Well-being</h3>
+              <p>
+                Menjaga kebugaran fisik santri demi mendukung kelancaran dan
+                fokus dalam menghafal Al-Qur'an.
+              </p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img
+              src="./asset/islamic-brotherhood.jpg"
+              alt="AFL players building friendship and teamwork"
+            />
+
+            <div>
+              <h3>Islamic Brotherhood</h3>
+              <p>
+                Menjadikan setiap pertandingan sebagai sarana untuk mempererat
+                tali silaturahmi, persaudaraan, dan rasa kebersamaan
+                antar-santri.
+              </p>
+            </div>
+          </article>
+
+          <article class="value-card">
+            <img
+              src="./asset/ethics-sportsmanship.jpg"
+              alt="AFL players demonstrating sportsmanship"
+            />
+
+            <div>
+              <h3>Islamic Ethics & Sportsmanship</h3>
+              <p>
+                Menanamkan nilai kedisiplinan, kemampuan mengendalikan diri,
+                serta saling menghargai antarpemain sesuai dengan tuntunan
+                syariat Islam.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Closing Motto -->
+      <section aria-label="AFL motto" class="px-5 pb-10 md:px-10 md:pb-12">
+        <div
+          class="relative flex min-h-70 items-center justify-center overflow-hidden rounded-2xl bg-green p-6 md:min-h-90 md:p-10"
+        >
           <img
             src="./asset/about-closing.jpg"
             alt=""
@@ -310,7 +493,9 @@
 
           <div class="absolute inset-0 bg-green/55"></div>
 
-          <blockquote class="relative z-10 max-w-3xl text-center text-3xl font-black uppercase leading-[.9] text-white md:text-5xl">
+          <blockquote
+            class="relative z-10 max-w-3xl text-center text-3xl font-black uppercase leading-[.9] text-white md:text-5xl"
+          >
             <p>“Champions of Akhlak,</p>
             <p>Masters of the Game.”</p>
           </blockquote>
@@ -318,24 +503,49 @@
       </section>
     </main>
 
-    <footer class="bg-green px-5 pb-5 pt-10 font-space text-white md:px-10 md:pt-12">
+    <!-- Footer -->
+    <footer
+      class="bg-green px-5 pb-5 pt-10 font-space text-white md:px-10 md:pt-12"
+    >
       <div class="mx-auto flex max-w-300 flex-col gap-10">
         <div class="flex flex-col justify-between gap-10 md:flex-row">
           <div>
             <p class="font-barlow text-2xl font-bold leading-7 md:text-3xl">
               Abu Dzar Futsal League
             </p>
+
             <p class="opacity-80">26–27</p>
           </div>
 
           <nav aria-label="Footer navigation">
-            <ul class="grid grid-cols-2 gap-x-10 gap-y-2 text-sm md:grid-cols-3">
-              <li><a href="./index.html" class="hover:opacity-60">Home</a></li>
-              <li><a href="./about.html" class="hover:opacity-60">About</a></li>
-              <li><a href="./index.html#clubs" class="hover:opacity-60">Teams</a></li>
-              <li><a href="./matches.html" class="hover:opacity-60">Matches</a></li>
-              <li><a href="./standings.html" class="hover:opacity-60">Standings</a></li>
-              <li><a href="./news.html" class="hover:opacity-60">News</a></li>
+            <ul
+              class="grid grid-cols-2 gap-x-10 gap-y-2 text-sm md:grid-cols-3"
+            >
+              <li>
+                <a href="./index.html" class="hover:opacity-60">Home</a>
+              </li>
+
+              <li>
+                <a href="./about.html" class="hover:opacity-60">About</a>
+              </li>
+
+              <li>
+                <a href="./index.html#clubs" class="hover:opacity-60">Teams</a>
+              </li>
+
+              <li>
+                <a href="./matches.html" class="hover:opacity-60">Matches</a>
+              </li>
+
+              <li>
+                <a href="./standings.html" class="hover:opacity-60">
+                  Standings
+                </a>
+              </li>
+
+              <li>
+                <a href="./news.html" class="hover:opacity-60">News</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -344,35 +554,43 @@
 
         <img src="./asset/adz-fl-footer-logo.svg" alt="ADZ FL" class="w-full" />
 
-        <p class="text-sm opacity-60">
-          &copy; AFL 2026 | All Rights Reserved
-        </p>
+        <p class="text-sm opacity-60">&copy; AFL 2026 | All Rights Reserved</p>
       </div>
     </footer>
 
     <script>
-      const menuButton = document.querySelector("#menu-button");
-      const menuIcon = document.querySelector("#menu-icon");
-      const mobileMenu = document.querySelector("#mobile-menu");
-      const mobileClose = document.querySelector("#mobile-close");
-      const mobileLinks = document.querySelectorAll(".mobile-link");
+      const $ = (selector, root = document) => root.querySelector(selector);
+      const $$ = (selector, root = document) => [
+        ...root.querySelectorAll(selector),
+      ];
 
-      const teamsToggle = document.querySelector("#teams-toggle");
-      const teamList = document.querySelector("#mobile-team-list");
-      const teamsPlus = document.querySelector("#teams-plus");
-      const teamsMinus = document.querySelector("#teams-minus");
+      const menuButton = $("#menu-button");
+      const menuIcon = $("#menu-icon");
+      const mobileMenu = $("#mobile-menu");
+      const mobileClose = $("#mobile-close");
+
+      const teamsToggle = $("#teams-toggle");
+      const teamList = $("#mobile-team-list");
+      const teamsPlus = $("#teams-plus");
+      const teamsMinus = $("#teams-minus");
 
       function openMenu() {
         mobileMenu.classList.remove("invisible", "opacity-0");
         mobileMenu.classList.add("visible", "opacity-100");
+
         menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close navigation");
+
         menuIcon.classList.replace("ph-list", "ph-x");
+
         document.body.classList.add("overflow-hidden");
       }
 
       function closeTeams() {
         teamsToggle.setAttribute("aria-expanded", "false");
+
         teamList.classList.replace("grid-rows-[1fr]", "grid-rows-[0fr]");
+
         teamsPlus.classList.remove("hidden");
         teamsMinus.classList.add("hidden");
       }
@@ -380,10 +598,24 @@
       function closeMenu() {
         mobileMenu.classList.remove("visible", "opacity-100");
         mobileMenu.classList.add("invisible", "opacity-0");
+
         menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+
         menuIcon.classList.replace("ph-x", "ph-list");
+
         document.body.classList.remove("overflow-hidden");
+
         closeTeams();
+      }
+
+      function openTeams() {
+        teamsToggle.setAttribute("aria-expanded", "true");
+
+        teamList.classList.replace("grid-rows-[0fr]", "grid-rows-[1fr]");
+
+        teamsPlus.classList.add("hidden");
+        teamsMinus.classList.remove("hidden");
       }
 
       menuButton.addEventListener("click", () => {
@@ -394,23 +626,14 @@
 
       mobileClose.addEventListener("click", closeMenu);
 
-      mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
-
-      teamsToggle.addEventListener("click", () => {
-        const open = teamsToggle.getAttribute("aria-expanded") === "true";
-
-        if (open) {
-          closeTeams();
-        } else {
-          teamsToggle.setAttribute("aria-expanded", "true");
-          teamList.classList.replace("grid-rows-[0fr]", "grid-rows-[1fr]");
-          teamsPlus.classList.add("hidden");
-          teamsMinus.classList.remove("hidden");
-        }
+      $$(".mobile-link").forEach((link) => {
+        link.addEventListener("click", closeMenu);
       });
 
-      mobileMenu.addEventListener("click", (event) => {
-        if (event.target === mobileMenu) closeMenu();
+      teamsToggle.addEventListener("click", () => {
+        teamsToggle.getAttribute("aria-expanded") === "true"
+          ? closeTeams()
+          : openTeams();
       });
 
       document.addEventListener("keydown", (event) => {

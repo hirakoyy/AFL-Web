@@ -4,257 +4,317 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Matches | AFL</title>
-
     <meta
       name="description"
-      content="Abu Dzar Futsal League match results and fixtures."
+      content="AFL — Abu Dzar Futsal League 2026–27. View match results and upcoming fixtures."
     />
 
-    <link rel="icon" href="./asset/afl-logo.png" />
+    <meta name="theme-color" content="#2C5743" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Matches | AFL</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
     />
 
-    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./asset/afl-logo.png" type="image/x-icon" />
   </head>
 
-  <body class="bg-[#FDFAEE] font-barlow text-[#2C5743]">
-    <!-- ==================== HEADER ==================== -->
-
+  <body class="bg-cream font-barlow text-green antialiased">
+    <!-- Header -->
     <header
-      class="sticky top-0 z-50 flex w-full items-center justify-between bg-[#2C5743] px-5 py-4 text-white md:px-10 md:py-4"
+      class="sticky top-0 z-50 flex h-20 items-center justify-between bg-green px-5 text-white shadow-sm md:h-22 md:px-10"
     >
-      <a href="./index.html" class="flex items-center gap-2">
-        <img src="./asset/afl-logo.png" alt="AFL Logo" class="w-12.5 md:w-14" />
+      <a
+        href="./index.html"
+        aria-label="AFL Home"
+        class="group flex items-center gap-2"
+      >
+        <img
+          src="./asset/afl-logo.png"
+          alt="AFL Logo"
+          class="w-11 transition-transform duration-300 group-hover:scale-105 md:w-13"
+        />
 
-        <span
-          class="font-roboto-flex text-4xl font-black leading-none md:text-5xl [font-variation-settings:'GRAD'_-200,'YTUC'_600,'wdth'_151]"
-        >
-          AFL
-        </span>
+        <span class="afl-wordmark text-cream">AFL</span>
       </a>
 
-      <!-- Desktop Navigation -->
+      <!-- Desktop navigation -->
+      <nav
+        aria-label="Main navigation"
+        class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex"
+      >
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
 
-      <nav aria-label="Main navigation" class="hidden md:block">
-        <ul class="flex items-center gap-8 text-base font-semibold">
-          <li>
-            <a href="./index.html" class="transition-opacity hover:opacity-70">
-              Home
-            </a>
-          </li>
+        <div class="group relative">
+          <button
+            type="button"
+            class="nav-link flex items-center gap-1.5"
+            aria-haspopup="true"
+          >
+            Teams
+            <i
+              class="ph-bold ph-caret-down transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+            ></i>
+          </button>
 
-          <li>
-            <a href="./about.html" class="transition-opacity hover:opacity-70">
-              About
-            </a>
-          </li>
-
-          <!-- Teams -->
-
-          <li class="group relative">
-            <button
-              type="button"
-              class="flex items-center gap-1 transition-opacity group-hover:opacity-70"
-            >
-              Teams
-              <span class="text-xs">⌄</span>
-            </button>
-
+          <div
+            class="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-2 pt-4 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100"
+          >
             <div
-              class="invisible absolute right-0 top-full w-55 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100"
+              class="overflow-hidden rounded-xl border border-white/10 bg-green/95 p-2 shadow-2xl backdrop-blur-xl"
             >
-              <ul
-                class="flex flex-col gap-1 rounded-xl bg-[#2C5743] p-2 text-white shadow-xl"
+              <p
+                class="px-3 pb-2 pt-2 font-space text-[10px] font-bold uppercase tracking-[.18em] text-white/45"
               >
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Abrar United
-                  </a>
-                </li>
+                Clubs
+              </p>
 
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Emporio de Montza
-                  </a>
-                </li>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Abrar United
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
 
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Deportivo de Esperanza
-                  </a>
-                </li>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Emporio De Montza
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
 
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Al Barq
-                  </a>
-                </li>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Deportivo De Esperanza
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
 
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Sparta FC
-                  </a>
-                </li>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Al Barq
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
 
-                <li>
-                  <a
-                    href="#"
-                    class="block rounded-lg px-3 py-2 hover:bg-white/10"
-                  >
-                    Vartica FC
-                  </a>
-                </li>
-              </ul>
+              <a href="./index.html#clubs" class="team-menu-link">
+                Sparta FC
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
+
+              <a href="./index.html#clubs" class="team-menu-link">
+                Vartica FC
+                <i class="ph-bold ph-arrow-up-right"></i>
+              </a>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li>
-            <a
-              href="./matches.html"
-              aria-current="page"
-              class="transition-opacity hover:opacity-70"
-            >
-              Matches
-            </a>
-          </li>
+        <a href="./matches.html" aria-current="page" class="nav-link">
+          Matches
+        </a>
 
-          <li>
-            <a
-              href="./standings.html"
-              class="transition-opacity hover:opacity-70"
-            >
-              Standings
-            </a>
-          </li>
-
-          <li>
-            <a href="./news.html" class="transition-opacity hover:opacity-70">
-              News
-            </a>
-          </li>
-        </ul>
+        <a href="./standings.html" class="nav-link">Standings</a>
+        <a href="./news.html" class="nav-link">News</a>
       </nav>
 
-      <!-- Mobile Menu Button -->
-
+      <!-- Mobile menu button -->
       <button
         id="menu-button"
         type="button"
-        aria-label="Open navigation menu"
+        aria-label="Open navigation"
         aria-expanded="false"
         aria-controls="mobile-menu"
-        class="flex h-10 w-10 items-center justify-center md:hidden"
+        class="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:bg-white/10 md:hidden"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          class="h-7 w-7"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+        <i id="menu-icon" class="ph-bold ph-list text-xl"></i>
       </button>
     </header>
 
-    <!-- ==================== MOBILE NAVIGATION ==================== -->
-
+    <!-- Mobile navigation -->
     <div
       id="mobile-menu"
-      class="invisible fixed inset-0 z-40 bg-black/30 opacity-0 backdrop-blur-md transition-all duration-200 md:hidden"
+      class="invisible fixed inset-0 z-[100] bg-green/60 opacity-0 backdrop-blur-xl transition-[opacity,visibility] duration-300 md:hidden"
     >
       <nav
         aria-label="Mobile navigation"
-        class="absolute right-0 top-0 flex h-full w-[80%] max-w-sm flex-col bg-[#2C5743] px-7 pb-10 pt-28 text-white shadow-xl"
+        class="flex h-full flex-col overflow-y-auto px-5 pb-6 pt-5 text-cream"
       >
-        <div class="flex flex-col gap-5 text-xl">
-          <a href="./index.html" class="mobile-link"> Home </a>
+        <div
+          class="flex items-center justify-between border-b border-green/20 pb-5"
+        >
+          <a
+            href="./index.html"
+            aria-label="AFL Home"
+            class="flex items-center gap-2"
+          >
+            <img src="./asset/afl-logo.png" alt="AFL Logo" class="w-11" />
+            <span class="afl-wordmark text-cream">AFL</span>
+          </a>
 
-          <a href="./about.html" class="mobile-link"> About </a>
+          <button
+            id="mobile-close"
+            type="button"
+            aria-label="Close navigation"
+            class="flex h-11 w-11 items-center justify-center rounded-full border border-green/25 transition hover:bg-green/10"
+          >
+            <i class="ph-bold ph-x text-xl"></i>
+          </button>
+        </div>
 
-          <div class="flex flex-col gap-3">
-            <p>Teams</p>
+        <div class="flex flex-1 flex-col pt-5">
+          <a href="./index.html" class="mobile-main-link mobile-link">
+            Home
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
 
-            <div class="flex flex-col gap-2 pl-4 text-base text-white/70">
-              <a href="#" class="mobile-link"> Abrar United </a>
+          <a href="./about.html" class="mobile-main-link mobile-link">
+            About
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
 
-              <a href="#" class="mobile-link"> Emporio de Montza </a>
+          <div class="border-b border-green/20">
+            <button
+              id="teams-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-team-list"
+              class="mobile-main-link"
+            >
+              Teams
 
-              <a href="#" class="mobile-link"> Deportivo de Esperanza </a>
+              <span class="flex h-10 w-10 items-center justify-center">
+                <i id="teams-plus" class="ph-bold ph-plus text-2xl"></i>
+                <i
+                  id="teams-minus"
+                  class="ph-bold ph-minus hidden text-2xl"
+                ></i>
+              </span>
+            </button>
 
-              <a href="#" class="mobile-link"> Al Barq </a>
+            <div
+              id="mobile-team-list"
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out"
+            >
+              <div class="overflow-hidden">
+                <div
+                  class="flex flex-col pb-5 pt-2 font-space text-[.95rem] font-bold"
+                >
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Abrar United
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
 
-              <a href="#" class="mobile-link"> Sparta FC </a>
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Emporio De Montza
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
 
-              <a href="#" class="mobile-link"> Vartica FC </a>
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Deportivo De Esperanza
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Al Barq
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Sparta FC
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+
+                  <a
+                    href="./index.html#clubs"
+                    class="mobile-team-link mobile-link"
+                  >
+                    Vartica FC
+                    <i class="ph-bold ph-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <a href="./matches.html" class="mobile-link"> Matches </a>
+          <a
+            href="./matches.html"
+            aria-current="page"
+            class="mobile-main-link mobile-link"
+          >
+            Matches
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
 
-          <a href="./standings.html" class="mobile-link"> Standings </a>
+          <a href="./standings.html" class="mobile-main-link mobile-link">
+            Standings
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
 
-          <a href="./news.html" class="mobile-link"> News </a>
+          <a href="./news.html" class="mobile-main-link mobile-link">
+            News
+            <i class="ph-bold ph-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div
+          class="mt-8 flex items-center justify-between border-t border-green/20 pt-5 font-space"
+        >
+          <span
+            class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50"
+          >
+            AFL 26–27
+          </span>
+
+          <span
+            class="text-[10px] font-bold uppercase tracking-[.18em] opacity-50"
+          >
+            Abu Dzar
+          </span>
         </div>
       </nav>
     </div>
 
-    <!-- ==================== MAIN ==================== -->
-
-    <main class="w-full">
-      <!-- ==================== PAGE BANNER ==================== -->
-
+    <main class="mx-auto w-full max-w-300">
+      <!-- Page hero -->
       <section aria-labelledby="matches-title" class="pb-7.5 md:pb-10">
         <div
-          class="relative flex min-h-60 items-end overflow-hidden bg-[#2C5743] md:min-h-80"
+          class="relative flex min-h-60 items-end overflow-hidden bg-green md:min-h-80"
         >
           <img
-            src="./asset/Futsal Team Lineup on a Moody Court.png"
+            src="./asset/matches-banner.JPG"
             alt=""
             class="absolute inset-0 h-full w-full object-cover opacity-60"
           />
 
           <div
-            class="absolute inset-0 bg-gradient-to-t from-[#2C5743] via-[#2C5743]/40 to-transparent"
+            class="absolute inset-0 bg-gradient-to-t from-green via-green/40 to-transparent"
           ></div>
 
-          <div class="relative z-10 flex max-w-3xl flex-col gap-2 p-5 md:p-8">
+          <div
+            class="relative z-10 mx-auto flex w-full max-w-300 flex-col gap-2 px-5 pb-6 md:px-10 md:pb-8"
+          >
             <p
-              class="font-space-grotesk text-sm font-medium uppercase tracking-widest text-white/70 md:text-base"
+              class="font-space text-xs font-medium uppercase tracking-[.18em] text-white/70 md:text-sm"
             >
               Abudzar Futsal League
             </p>
 
             <h1
               id="matches-title"
-              class="text-4xl font-black uppercase leading-[0.9] text-white md:text-6xl"
+              class="text-5xl font-black uppercase leading-[.85] text-white md:text-7xl"
             >
               Matches
             </h1>
@@ -262,39 +322,32 @@
         </div>
       </section>
 
-      <!-- ==================== RESULTS ==================== -->
-
+      <!-- Results -->
       <section
         aria-labelledby="results-title"
-        class="mx-auto max-w-250 px-5 pb-7.5 md:px-10 md:pb-10"
+        class="content-section px-5 md:px-10"
       >
-        <div class="mb-5">
-          <p
-            class="font-space-grotesk text-sm font-medium uppercase tracking-widest opacity-60"
-          >
-            AFL 26–27
-          </p>
+        <div class="section-heading">
+          <div>
+            <p
+              class="mb-1 font-space text-xs font-bold uppercase tracking-[.18em] opacity-50"
+            >
+              AFL 26–27
+            </p>
 
-          <h2
-            id="results-title"
-            class="text-3xl font-black uppercase leading-none md:text-4xl"
-          >
-            Results
-          </h2>
+            <h2 id="results-title" class="section-title">Results</h2>
+          </div>
         </div>
 
-        <!-- ==================== WEEK CAROUSEL ==================== -->
-
+        <!-- Week selector -->
         <div
-          id="week-tabs"
-          class="mb-7 flex w-full snap-x snap-mandatory scroll-smooth overflow-x-auto rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] p-1.5"
+          class="flex w-full snap-x snap-mandatory overflow-x-auto rounded-xl border border-border bg-mint p-1.5"
           role="tablist"
           aria-label="Match weeks"
         >
           <button
             type="button"
-            id="week-tab-1"
-            class="week-button min-w-24 shrink-0 snap-center rounded-lg bg-[#2C5743] px-5 py-2.5 font-space-grotesk text-sm font-bold text-white transition md:flex-1 md:text-base"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg bg-green px-5 py-2.5 font-space text-sm font-bold text-white transition md:flex-1 md:text-base"
             data-week="1"
             role="tab"
             aria-selected="true"
@@ -305,8 +358,7 @@
 
           <button
             type="button"
-            id="week-tab-2"
-            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space text-sm font-bold transition hover:bg-border/30 md:flex-1 md:text-base"
             data-week="2"
             role="tab"
             aria-selected="false"
@@ -317,8 +369,7 @@
 
           <button
             type="button"
-            id="week-tab-3"
-            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space text-sm font-bold transition hover:bg-border/30 md:flex-1 md:text-base"
             data-week="3"
             role="tab"
             aria-selected="false"
@@ -329,8 +380,7 @@
 
           <button
             type="button"
-            id="week-tab-4"
-            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space-grotesk text-sm font-bold transition hover:bg-[#7BBA9C]/30 md:flex-1 md:text-base"
+            class="week-button min-w-24 shrink-0 snap-center rounded-lg px-5 py-2.5 font-space text-sm font-bold transition hover:bg-border/30 md:flex-1 md:text-base"
             data-week="4"
             role="tab"
             aria-selected="false"
@@ -340,266 +390,155 @@
           </button>
         </div>
 
-        <!-- ==================== WEEK 1 ==================== -->
-
+        <!-- Week 1 -->
         <div
           id="week-content-1"
-          class="week-content"
+          class="week-content flex flex-col gap-8"
           data-week-content="1"
           role="tabpanel"
           aria-labelledby="week-tab-1"
         >
-          <div class="flex flex-col gap-8">
-            <!-- Saturday, 3 September -->
+          <!-- Saturday -->
+          <section aria-labelledby="date-3-september">
+            <div class="mb-3 flex items-center gap-3">
+              <h3 id="date-3-september" class="font-space text-lg font-bold">
+                Sabtu, 3 September
+              </h3>
 
-            <section aria-labelledby="date-3-september">
-              <div class="mb-3 flex items-center gap-3">
-                <h3
-                  id="date-3-september"
-                  class="font-space-grotesk text-lg font-bold"
-                >
-                  Sabtu, 3 September
-                </h3>
+              <div class="h-px flex-1 bg-border"></div>
+            </div>
 
-                <div class="h-px flex-1 bg-[#7BBA9C]"></div>
-              </div>
+            <div class="panel">
+              <article class="match-row">
+                <div class="team team-home">
+                  <span>Sparta FC</span>
+                  <img src="./asset/sparta-fc-logo.png" alt="Sparta FC" />
+                </div>
 
-              <div
-                class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1]"
-              >
-                <!-- Match 1 -->
+                <div class="flex flex-col items-center gap-0.5">
+                  <div class="score">
+                    <span>4</span>
+                    <span>–</span>
+                    <span>9</span>
+                  </div>
 
-                <article
-                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
-                >
-                  <!-- Home -->
-
-                  <div
-                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  <span
+                    class="font-space text-[10px] font-bold uppercase opacity-50"
                   >
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Sparta FC
-                    </span>
+                    FT
+                  </span>
+                </div>
 
-                    <img
-                      src="./asset/sparta-fc-logo.png"
-                      alt="Sparta FC"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
+                <div class="team">
+                  <img src="./asset/abrar-united-logo.png" alt="Abrar United" />
+                  <span>Abrar United</span>
+                </div>
+              </article>
+
+              <article class="match-row">
+                <div class="team team-home">
+                  <span>Deportivo De Esperanza</span>
+                  <img
+                    src="./asset/deportivo-de-esperanza-logo.png"
+                    alt="Deportivo De Esperanza"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center gap-0.5">
+                  <div class="score">
+                    <span>2</span>
+                    <span>–</span>
+                    <span>2</span>
                   </div>
 
-                  <!-- Score -->
-
-                  <div class="flex min-w-14 flex-col items-center">
-                    <div class="flex items-center gap-2 text-2xl font-black">
-                      <span>4</span>
-                      <span class="opacity-40">–</span>
-                      <span>9</span>
-                    </div>
-
-                    <span
-                      class="font-space-grotesk text-xs font-bold uppercase opacity-60"
-                    >
-                      FT
-                    </span>
-                  </div>
-
-                  <!-- Away -->
-
-                  <div class="flex min-w-0 items-center gap-2 text-left">
-                    <img
-                      src="./asset/abrar-united-logo.png"
-                      alt="Abrar United"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
-
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Abrar United
-                    </span>
-                  </div>
-                </article>
-
-                <!-- Match 2 -->
-
-                <article
-                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 border-b border-[#7BBA9C] px-4 py-5 md:px-7"
-                >
-                  <!-- Home -->
-
-                  <div
-                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  <span
+                    class="font-space text-[10px] font-bold uppercase opacity-50"
                   >
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Deportivo De Esperanza
-                    </span>
+                    FT
+                  </span>
+                </div>
 
-                    <img
-                      src="./asset/deportivo-de-esperanza-logo.png"
-                      alt="Deportivo De Esperanza"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
+                <div class="team">
+                  <img
+                    src="./asset/delphina-union-logo.png"
+                    alt="Delphina Union"
+                  />
+                  <span>Delphina Union</span>
+                </div>
+              </article>
+
+              <article class="match-row">
+                <div class="team team-home">
+                  <span>Emporio De Montza</span>
+                  <img
+                    src="./asset/emporio-de-montza-logo.png"
+                    alt="Emporio De Montza"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center gap-0.5">
+                  <div class="score">
+                    <span>6</span>
+                    <span>–</span>
+                    <span>5</span>
                   </div>
 
-                  <!-- Score -->
-
-                  <div class="flex min-w-14 flex-col items-center">
-                    <div class="flex items-center gap-2 text-2xl font-black">
-                      <span>2</span>
-                      <span class="opacity-40">–</span>
-                      <span>2</span>
-                    </div>
-
-                    <span
-                      class="font-space-grotesk text-xs font-bold uppercase opacity-60"
-                    >
-                      FT
-                    </span>
-                  </div>
-
-                  <!-- Away -->
-
-                  <div class="flex min-w-0 items-center gap-2 text-left">
-                    <img
-                      src="./asset/delphina-union-logo.png"
-                      alt="Delphina Union"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
-
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Delphina Union
-                    </span>
-                  </div>
-                </article>
-
-                <!-- Match 3 -->
-
-                <article
-                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 px-4 py-5 md:px-7"
-                >
-                  <!-- Home -->
-
-                  <div
-                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  <span
+                    class="font-space text-[10px] font-bold uppercase opacity-50"
                   >
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Emporio De Montza
-                    </span>
+                    FT
+                  </span>
+                </div>
 
-                    <img
-                      src="./asset/emporio-de-montza-logo.png"
-                      alt="Emporio De Montza"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
+                <div class="team">
+                  <img src="./asset/vartica-fc-logo.png" alt="Vartica FC" />
+                  <span>Vartica FC</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Sunday -->
+          <section aria-labelledby="date-4-september">
+            <div class="mb-3 flex items-center gap-3">
+              <h3 id="date-4-september" class="font-space text-lg font-bold">
+                Minggu, 4 September
+              </h3>
+
+              <div class="h-px flex-1 bg-border"></div>
+            </div>
+
+            <div class="panel">
+              <article class="match-row">
+                <div class="team team-home">
+                  <span>Sparta FC</span>
+                  <img src="./asset/sparta-fc-logo.png" alt="Sparta FC" />
+                </div>
+
+                <div class="flex flex-col items-center gap-0.5">
+                  <div class="score">
+                    <span>2</span>
+                    <span>–</span>
+                    <span>2</span>
                   </div>
 
-                  <!-- Score -->
-
-                  <div class="flex min-w-14 flex-col items-center">
-                    <div class="flex items-center gap-2 text-2xl font-black">
-                      <span>6</span>
-                      <span class="opacity-40">–</span>
-                      <span>5</span>
-                    </div>
-
-                    <span
-                      class="font-space-grotesk text-xs font-bold uppercase opacity-60"
-                    >
-                      FT
-                    </span>
-                  </div>
-
-                  <!-- Away -->
-
-                  <div class="flex min-w-0 items-center gap-2 text-left">
-                    <img
-                      src="./asset/vartica-fc-logo.png"
-                      alt="Vartica FC"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
-
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Vartica FC
-                    </span>
-                  </div>
-                </article>
-              </div>
-            </section>
-
-            <!-- Sunday, 4 September -->
-
-            <section aria-labelledby="date-4-september">
-              <div class="mb-3 flex items-center gap-3">
-                <h3
-                  id="date-4-september"
-                  class="font-space-grotesk text-lg font-bold"
-                >
-                  Minggu, 4 September
-                </h3>
-
-                <div class="h-px flex-1 bg-[#7BBA9C]"></div>
-              </div>
-
-              <div
-                class="overflow-hidden rounded-xl border border-[#7BBA9C] bg-[#EAF8F1]"
-              >
-                <!-- Match 1 -->
-
-                <article
-                  class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 px-4 py-5 md:px-7"
-                >
-                  <!-- Home -->
-
-                  <div
-                    class="flex min-w-0 items-center justify-end gap-2 text-right"
+                  <span
+                    class="font-space text-[10px] font-bold uppercase opacity-50"
                   >
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Sparta FC
-                    </span>
+                    FT
+                  </span>
+                </div>
 
-                    <img
-                      src="./asset/sparta-fc-logo.png"
-                      alt="Sparta FC"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
-                  </div>
-
-                  <!-- Score -->
-
-                  <div class="flex min-w-14 flex-col items-center">
-                    <div class="flex items-center gap-2 text-2xl font-black">
-                      <span>2</span>
-                      <span class="opacity-40">–</span>
-                      <span>2</span>
-                    </div>
-
-                    <span
-                      class="font-space-grotesk text-xs font-bold uppercase opacity-60"
-                    >
-                      FT
-                    </span>
-                  </div>
-
-                  <!-- Away -->
-
-                  <div class="flex min-w-0 items-center gap-2 text-left">
-                    <img
-                      src="./asset/abrar-united-logo.png"
-                      alt="Abrar United"
-                      class="h-7 w-7 shrink-0 object-contain md:h-9 md:w-9"
-                    />
-
-                    <span class="min-w-0 text-sm font-bold md:text-base">
-                      Abrar United
-                    </span>
-                  </div>
-                </article>
-              </div>
-            </section>
-          </div>
+                <div class="team">
+                  <img src="./asset/abrar-united-logo.png" alt="Abrar United" />
+                  <span>Abrar United</span>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
 
-        <!-- ==================== WEEK 2 ==================== -->
-
+        <!-- Weeks 2–4 -->
         <div
           id="week-content-2"
           class="week-content hidden"
@@ -607,22 +546,11 @@
           role="tabpanel"
           aria-labelledby="week-tab-2"
         >
-          <div
-            class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
-          >
-            <div>
-              <p
-                class="font-space-grotesk text-sm font-bold uppercase tracking-widest opacity-50"
-              >
-                Week 2
-              </p>
-
-              <p class="mt-1 text-lg font-bold">Matches coming soon</p>
-            </div>
+          <div class="week-empty">
+            <p>Week 2</p>
+            <span>Matches coming soon</span>
           </div>
         </div>
-
-        <!-- ==================== WEEK 3 ==================== -->
 
         <div
           id="week-content-3"
@@ -631,22 +559,11 @@
           role="tabpanel"
           aria-labelledby="week-tab-3"
         >
-          <div
-            class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
-          >
-            <div>
-              <p
-                class="font-space-grotesk text-sm font-bold uppercase tracking-widest opacity-50"
-              >
-                Week 3
-              </p>
-
-              <p class="mt-1 text-lg font-bold">Matches coming soon</p>
-            </div>
+          <div class="week-empty">
+            <p>Week 3</p>
+            <span>Matches coming soon</span>
           </div>
         </div>
-
-        <!-- ==================== WEEK 4 ==================== -->
 
         <div
           id="week-content-4"
@@ -655,37 +572,26 @@
           role="tabpanel"
           aria-labelledby="week-tab-4"
         >
-          <div
-            class="flex min-h-45 items-center justify-center rounded-xl border border-[#7BBA9C] bg-[#EAF8F1] px-5 text-center"
-          >
-            <div>
-              <p
-                class="font-space-grotesk text-sm font-bold uppercase tracking-widest opacity-50"
-              >
-                Week 4
-              </p>
-
-              <p class="mt-1 text-lg font-bold">Matches coming soon</p>
-            </div>
+          <div class="week-empty">
+            <p>Week 4</p>
+            <span>Matches coming soon</span>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
-
+    <!-- Footer -->
     <footer
-      class="bg-[#2C5743] px-5 pb-5 pt-10 font-space-grotesk text-white md:px-10 md:pt-12"
+      class="bg-green px-5 pb-5 pt-10 font-space text-white md:px-10 md:pt-12"
     >
-      <div class="flex flex-col gap-10">
+      <div class="mx-auto flex max-w-300 flex-col gap-10">
         <div
           class="flex flex-col items-start justify-between gap-10 md:flex-row"
         >
-          <div class="flex flex-col gap-1">
+          <div>
             <p class="font-barlow text-2xl font-bold leading-7 md:text-3xl">
               Abu Dzar Futsal League
             </p>
-
             <p class="text-base opacity-80">26–27</p>
           </div>
 
@@ -697,11 +603,11 @@
                 class="flex flex-col items-start gap-2 text-base md:items-end"
               >
                 <li>
-                  <a href="./index.html" class="hover:opacity-70"> Home </a>
+                  <a href="./index.html" class="hover:opacity-70">Home</a>
                 </li>
 
                 <li>
-                  <a href="./about.html" class="hover:opacity-70"> About </a>
+                  <a href="./about.html" class="hover:opacity-70">About</a>
                 </li>
 
                 <li>
@@ -717,7 +623,7 @@
                 </li>
 
                 <li>
-                  <a href="./news.html" class="hover:opacity-70"> News </a>
+                  <a href="./news.html" class="hover:opacity-70">News</a>
                 </li>
               </ul>
             </nav>
@@ -742,21 +648,34 @@
       </div>
     </footer>
 
-    <!-- ==================== JAVASCRIPT ==================== -->
-
     <script>
-      // ==================== MOBILE MENU ====================
-
       const menuButton = document.getElementById("menu-button");
+      const menuIcon = document.getElementById("menu-icon");
       const mobileMenu = document.getElementById("mobile-menu");
-      const mobileLinks = document.querySelectorAll(".mobile-link");
+      const mobileClose = document.getElementById("mobile-close");
+
+      const teamsToggle = document.getElementById("teams-toggle");
+      const teamList = document.getElementById("mobile-team-list");
+      const teamsPlus = document.getElementById("teams-plus");
+      const teamsMinus = document.getElementById("teams-minus");
 
       function openMenu() {
         mobileMenu.classList.remove("invisible", "opacity-0");
         mobileMenu.classList.add("visible", "opacity-100");
 
         menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close navigation");
+        menuIcon.classList.replace("ph-list", "ph-x");
+
         document.body.classList.add("overflow-hidden");
+      }
+
+      function closeTeams() {
+        teamsToggle.setAttribute("aria-expanded", "false");
+        teamList.classList.replace("grid-rows-[1fr]", "grid-rows-[0fr]");
+
+        teamsPlus.classList.remove("hidden");
+        teamsMinus.classList.add("hidden");
       }
 
       function closeMenu() {
@@ -764,48 +683,56 @@
         mobileMenu.classList.add("invisible", "opacity-0");
 
         menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+        menuIcon.classList.replace("ph-x", "ph-list");
+
         document.body.classList.remove("overflow-hidden");
+
+        closeTeams();
       }
 
       menuButton.addEventListener("click", () => {
-        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-
-        if (isOpen) {
-          closeMenu();
-        } else {
-          openMenu();
-        }
+        menuButton.getAttribute("aria-expanded") === "true"
+          ? closeMenu()
+          : openMenu();
       });
 
-      mobileLinks.forEach((link) => {
+      mobileClose.addEventListener("click", closeMenu);
+
+      document.querySelectorAll(".mobile-link").forEach((link) => {
         link.addEventListener("click", closeMenu);
       });
 
-      mobileMenu.addEventListener("click", (event) => {
-        if (event.target === mobileMenu) {
-          closeMenu();
+      teamsToggle.addEventListener("click", () => {
+        const open = teamsToggle.getAttribute("aria-expanded") === "true";
+
+        if (open) {
+          closeTeams();
+        } else {
+          teamsToggle.setAttribute("aria-expanded", "true");
+          teamList.classList.replace("grid-rows-[0fr]", "grid-rows-[1fr]");
+          teamsPlus.classList.add("hidden");
+          teamsMinus.classList.remove("hidden");
         }
       });
 
-      // ==================== WEEK SELECTOR ====================
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+      });
 
-      const weekTabs = document.getElementById("week-tabs");
       const weekButtons = document.querySelectorAll(".week-button");
       const weekContents = document.querySelectorAll(".week-content");
 
       function selectWeek(selectedWeek) {
         weekButtons.forEach((button) => {
-          const isSelected = button.dataset.week === selectedWeek;
+          const active = button.dataset.week === selectedWeek;
 
-          button.classList.toggle("bg-[#2C5743]", isSelected);
+          button.classList.toggle("bg-green", active);
+          button.classList.toggle("text-white", active);
+          button.classList.toggle("hover:bg-border/30", !active);
+          button.setAttribute("aria-selected", String(active));
 
-          button.classList.toggle("text-white", isSelected);
-
-          button.classList.toggle("hover:bg-[#7BBA9C]/30", !isSelected);
-
-          button.setAttribute("aria-selected", isSelected ? "true" : "false");
-
-          if (isSelected) {
+          if (active) {
             button.scrollIntoView({
               behavior: "smooth",
               block: "nearest",
@@ -815,37 +742,33 @@
         });
 
         weekContents.forEach((content) => {
-          const isSelected = content.dataset.weekContent === selectedWeek;
-
-          content.classList.toggle("hidden", !isSelected);
+          content.classList.toggle(
+            "hidden",
+            content.dataset.weekContent !== selectedWeek,
+          );
         });
       }
 
-      weekButtons.forEach((button) => {
+      weekButtons.forEach((button, index) => {
         button.addEventListener("click", () => {
           selectWeek(button.dataset.week);
         });
-      });
 
-      // Keyboard navigation for the week carousel
-
-      weekButtons.forEach((button, index) => {
         button.addEventListener("keydown", (event) => {
           let nextIndex = index;
 
           if (event.key === "ArrowRight") {
-            nextIndex = Math.min(index + 1, weekButtons.length - 1);
+            nextIndex = (index + 1) % weekButtons.length;
           }
 
           if (event.key === "ArrowLeft") {
-            nextIndex = Math.max(index - 1, 0);
+            nextIndex = (index - 1 + weekButtons.length) % weekButtons.length;
           }
 
           if (nextIndex !== index) {
             event.preventDefault();
 
             const nextButton = weekButtons[nextIndex];
-
             nextButton.focus();
             selectWeek(nextButton.dataset.week);
           }

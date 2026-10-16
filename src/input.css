@@ -343,3 +343,14 @@
     animation-iteration-count: 1 !important;
   }
 }
+.week-empty {
+  @apply flex min-h-45 items-center justify-center rounded-xl border border-border bg-mint px-5 text-center;
+}
+
+.week-empty p {
+  @apply font-space text-sm font-bold uppercase tracking-widest opacity-50;
+}
+
+.week-empty span {
+  @apply mt-1 block text-lg font-bold;
+}
